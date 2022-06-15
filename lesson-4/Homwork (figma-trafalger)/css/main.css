@@ -1,0 +1,228 @@
+header {
+        margin: 0 80px;
+}
+
+.nav-logo {
+        width: 160px;
+        height: 41px;
+        display: inline;
+}
+
+.nav-list {
+        display: inline;
+        list-style: none;
+        float: right;
+}
+
+.nav-items {
+        display: inline;
+        margin-right: 20px;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        /* identical to box height */
+        /* 1f1534-hyfen */
+        color: #1F1534;
+        opacity: 0.5;
+}
+
+.nav-items-active {
+        display: inline;
+        margin-right: 20px;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        /* identical to box height */
+        /* 1f1534-hyfen */
+        color: #1F1534;
+}
+
+h1 {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        /* or 117% */
+        color: #000000;
+}
+
+.main-text {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 32px;
+        /* or 152% */
+        color: #7D7987;
+}
+
+.main-btn {
+        height: 50px;
+        display: inline-block;
+        padding-top: 3px;
+        padding-left: 40px;
+        padding-bottom: 3px;
+        padding-right: 40px;
+        background: #458FF6;
+        border-radius: 55px;
+}
+
+.main-btn a {
+        text-decoration: none;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 50px;
+        color: #FFFFFF;
+}
+
+.hero {
+        display: inline-block;
+}
+
+.hero-title,
+.hero-img {
+        display: inline-block;
+        vertical-align: middle;
+}
+
+.hero-title {
+        margin: 0 80px;
+}
+
+.service-content{
+        margin-left: 100px;
+}
+
+.service-title{
+        text-align: center;
+}
+
+.service-list{
+        list-style: none;
+        margin: 0;
+        margin-bottom: 70px;
+        padding: 0;
+}
+
+.service_item{
+        display: inline-block;
+        width: 300px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        padding: 35px;
+        background-color: #fff;
+        border-radius: 20px;
+}
+
+.service_item-img {
+        width: 91px;
+        height: 90px;
+        margin-bottom: 24px;
+}
+
+.service_subtitle {
+        margin: 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 56px;
+        color: #000000;
+}
+
+.service_summary {
+        margin: 0;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        color: #7D7987;
+}
+
+.service-btn{
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 56px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 60px;
+        border: 1.4px solid #458FF6;
+        border-radius: 55px;
+        color: #458FF6;
+}
+
+
+.comments{
+        margin-top: 100px;
+}
+
+.comments_box {
+        padding: 61px 116px 91px 116px;
+        background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+        border-radius: 24px;
+}
+
+.comments_left {
+        display: inline-block;
+        margin-right: 110px;
+}
+
+.comments_title {
+        margin: 0 0 25px 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: #FFFFFF;
+}
+
+.customer_img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 33px;
+        width: 133px;
+        height: 133px;
+        border-radius: 50%;
+}
+
+.customer_info {
+        display: inline-block;
+        vertical-align: middle;
+}
+
+.customer_name {
+        margin: 0 0 5px 0;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 48px;
+        color: #FFFFFF;
+}
+
+.customer_job {
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 48px;
+        color: rgba(255, 255, 255, 0.85);
+}
+
+.comments_right {
+        display: inline-block;
+        margin: 0;
+        vertical-align: middle;
+}
+
+.comments_right blockquote {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: rgba(255, 255, 255, 0.9);
+}
