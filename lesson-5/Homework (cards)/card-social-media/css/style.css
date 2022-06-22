@@ -1,0 +1,87 @@
+.container {
+     margin: 0 auto;
+     padding: 75px 0;
+     text-align: center;
+}
+
+.card-blok {
+     padding: 50px 30px;
+     display: inline-block;
+     width: 370px;
+     height: 520px;
+     box-sizing: border-box;
+     vertical-align: middle;
+     border: 2px solid #111;
+     border-radius: 5px;
+     transition: all 0.3s;
+}
+
+.card-blok:hover{
+     transition: all 0.3s;
+     box-shadow: 0px 0px 20px 10px rgba(193, 197, 207, 0.829);
+     transform: scale(103%);
+}
+
+.card-blok+.card-blok {
+     margin-left: 50px;
+}
+
+.pink{
+     background-color: rgb(225, 048, 108);
+     color: #fff;
+     border: none;
+}
+
+.pink svg{
+     width: 100px;
+     height: 120px;
+}
+
+
+.title {
+     margin: 0;
+     font-size: 45px;
+     font-weight: bolder;
+     margin-bottom: 20px;
+}
+
+.text {
+     font-size: 18px;
+     line-height: 24px;
+     color: #7D7987;
+}
+
+.white{
+     color: #fff;
+}
+
+.btn{
+     display: block;
+     box-sizing: border-box;
+     padding: 17px 0;
+     font-size: 22px;
+     /* width: 100%; */
+     /* padding: 15px 20px; */
+     text-decoration: none;
+     color: #fff;
+     background-color: #111;
+     border-radius: 50px;
+     transition: all 0.3s;
+     border: 1px solid #111;
+}
+
+.btn:hover{
+     color: #111;
+     background-color: #fff;
+}
+
+.btn-white{
+     border: 1px solid white;
+     color: rgb(225, 048, 108);
+     background-color: #fff;
+}
+
+.btn-white:hover{
+     color: rgb(225, 048, 108);
+     border: 1px solid  black;
+}
