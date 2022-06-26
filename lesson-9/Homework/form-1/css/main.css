@@ -1,30 +1,206 @@
-*{
+* {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-image: -o-linear-gradient(290deg, #E4FBF4 0%, #E4FBF4 10%, #FEE6F9 40%);
+  background-image: linear-gradient(160deg, #E4FBF4 0%, #E4FBF4 10%, #FEE6F9 40%);
 }
 
-.form{
+.form {
   width: 600px;
-  background-image:  linear-gradient(145deg, #E4FBF4 0%, #E4FBF4 40%, #FEE6F9 40%);
+  background-image: -o-linear-gradient(310deg, #E4FBF4 0%, #E4FBF4 50%, #FEE6F9 50%);
+  background-image: linear-gradient(140deg, #E4FBF4 0%, #E4FBF4 50%, #FEE6F9 50%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  -webkit-box-shadow: 1px 1px 5px .5px #adacac;
+  box-shadow: 1px 1px 5px .5px #adacac;
 }
 
-.form-heading{
-  margin: 30px 0 6px;
+.form:hover {
+  -webkit-box-shadow: 1px 1px 5px 2px #757575;
+  box-shadow: 1px 1px 5px 2px #757575;
+}
+
+.form-heading {
+  margin: 40px 0 6px;
   padding: 0;
   text-align: center;
-  
+  font-size: 50px;
+
 }
 
-.form-title{
+.form-title {
   margin: 0;
   padding: 0;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
+  opacity: .5;
+}
+
+.name-box {
+  margin: 0 auto 10px;
+  width: 385px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+.name-box img {
+  margin: 20px 15px;
+}
+
+.name-box input {
+  border: none;
+  padding: 10px;
+}
+
+input {
+  outline: none;
+}
+
+input[type='text']::-webkit-input-placeholder {
+  font-size: 20px;
+}
+
+input[type='text']::-moz-placeholder {
+  font-size: 20px;
+}
+
+input[type='text']:-ms-input-placeholder {
+  font-size: 20px;
+}
+
+input[type='text']::-ms-input-placeholder {
+  font-size: 20px;
+}
+
+input[type='text']::placeholder {
+  font-size: 20px;
+}
+
+.password-box {
+  margin: 0 auto 30px;
+  width: 385px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.password-box img {
+  margin: 20px 15px;
+}
+
+.password-box input {
+  border: none;
+  padding: 10px;
+}
+
+.form-button {
+  padding: 20px 15px;
+  margin: 0 auto;
+  width: 385px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  color: #757575;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.form-bottom {
+  margin: 50px 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.btn-transparent, .btn-white {
+  padding: 12px;
+  width: 185px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.btn-white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #B9F1E6;
+  border: 2px solid #B9F1E6;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.btn-white:hover {
+  background-color: #fff;
 }
