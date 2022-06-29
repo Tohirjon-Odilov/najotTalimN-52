@@ -1,0 +1,127 @@
+*{
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-page{
+  padding: 40px 32px;
+  width: 555px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px 2px #abbb;
+  background-image: linear-gradient(131deg, green 0%, green 37%, white 37%);
+}
+
+.page-left{
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.page-text{
+  margin: 16px 0;
+  padding: 0;
+  color: #fff;
+}
+
+.page-link{
+  padding: 5px 0;
+  width: 59%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border:  1px solid white;
+  border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.page-link:hover{
+  color: green;
+  background-color: #fff;
+}
+
+.form-label{
+  margin-bottom:  17px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.7;
+}
+
+.form-title{
+  margin: 0;
+  margin-top: 37px;
+  margin-bottom: 15px;
+  padding: 0;
+  opacity: .7;
+}
+
+input{
+  padding:  5px 10px;
+  border:1px solid #abbb;
+  outline: none;
+  border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
+}
+
+input:hover{
+  border-color: rgba(113, 115, 115, 0.733);
+}
+
+.form-btn{
+  color: green;
+  background-color: #fff;
+  border: 1px solid green;
+  padding:  5px 10px;
+  border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.form-btn:hover{
+  color: #fff;
+  background-color: green;
+}
+
+.form-link{
+  margin:  10px 0;
+  color: green;
+  text-decoration: none;
+}

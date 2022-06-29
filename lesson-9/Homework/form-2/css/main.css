@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: cursive;
+  background-image: linear-gradient(180deg,#FF9000 0%, #FEC94A 100% );
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow:  1px 1px 10px 2px #abbb;
+  border-radius:  5px;
+  -webkit-border-radius:  5px;
+  -moz-border-radius:  5px;
+  -ms-border-radius:  5px;
+  -o-border-radius:  5px;
+}
+
+.form-top-sircle{
+  padding:  20px 0;
+  display: flex;
+  justify-content: center;
+  gap:  0.5rem;
+  border-bottom: 1px solid #abbb;
+}
+
+
+.circle{
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #abbb;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.circle:first-child{
+  background-color: #FF9000;
+}
+
+.form-title{
+  padding: 0;
+  margin:  0;
+  margin-top:  36px;
+  margin-bottom:  21px;
+  text-align: center;
+  color: #FF9000;
+  font-weight: 500;
+}
+
+.form-text{
+  margin: 0 0 27px;
+  padding: 0;
+  text-align: center;
+  opacity:  .5;
+}
+
+.form-input{
+  margin: 0 auto;
+  padding: 12px 16px;
+  width: 70%;
+  border: 1px solid #abbb;
+  border-radius:  5px;
+  -webkit-border-radius:  5px;
+  -moz-border-radius:  5px;
+  -ms-border-radius:  5px;
+  -o-border-radius:  5px;
+  outline: none;
+}
+
+.form-input:hover{
+  border-color:  #FF9000;
+}
+
+.form-input + .form-input{
+  margin-top:  20px;
+}
+
+.form-btn{
+  margin: 15px auto 35px;
+  width: 13%;
+  padding:  7px 0;
+  background-color: #FF9000;
+  color: #fff;
+  border: none;
+  text-transform:  uppercase;
+  letter-spacing:  1px;
+  border-radius:  3px;
+  -webkit-border-radius:  3px;
+  -moz-border-radius:  3px;
+  -ms-border-radius:  3px;
+  -o-border-radius:  3px;
+  border: 1px solid #FF9000;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.form-btn:hover{
+  background-color: #fff;
+  color: #FF9000;
+}
+

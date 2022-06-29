@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+}
+
+.flag{
+  width: 600px;
+  height: 400px;
+  display: block;
+  box-shadow: 1px 1px 10px 2px;
+  background: linear-gradient( 17deg, #000066 32%, #BD1021 32% 35%, rgba(255, 255, 255, 0) 35%  ), linear-gradient( 163deg, #000066 32%, #BD1021 32% 35%, rgba(255, 255, 255, 0) 35%  ) , url(../imgs/american-samoa.png) center right / 200px auto no-repeat;
+}

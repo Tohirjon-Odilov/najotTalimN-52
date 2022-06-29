@@ -1,0 +1,10 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.site-page{
+  width: 100%;
+  height: 100vh;
+  background: url(../images/bee.png) calc(50% + 50px) calc(50% + 100px)/70px 70px no-repeat, url(../images/bee-fly.png) calc(50% - 170px) calc(50% - 100px)/70px 70px no-repeat, url(../images/flower_garden.jpg) center/ cover no-repeat;
+}

@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+}
+
+.flag{
+  width: 600px;
+  height: 400px;
+  display: block;
+  box-shadow:  1px  1px 10px 2px;
+  background:  url(../imgs/flag-logo.png) calc(50% - 110px) calc( 50% + 10px )/ 170px auto no-repeat , linear-gradient(to bottom, #ff0000 50%, black 50%);
+}

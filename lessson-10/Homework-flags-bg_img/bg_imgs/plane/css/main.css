@@ -1,0 +1,10 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.sky{
+  width: 100%;
+  height: 100vh;
+  background:  url(../images/plane.png) calc(50% - 400px) calc(50%)/300px auto no-repeat, url(../images/sky.jpg) center/cover no-repeat;
+}

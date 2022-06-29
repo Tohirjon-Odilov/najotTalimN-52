@@ -142,6 +142,7 @@ input[type='text']::placeholder {
   padding: 20px 15px;
   margin: 0 auto;
   width: 385px;
+  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

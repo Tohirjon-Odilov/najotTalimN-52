@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(127, 79, 87);
+}
+
+.section-page {
+
+  padding: 25px 88px;
+  width: 762px;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid white;
+}
+
+.page-left {
+  padding: 0 0;
+  color: white;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.bg {
+  display: block;
+  width: 144px;
+  padding: 4px 25px;
+  color: rgb(127, 79, 87);
+  background-color: #fff;
+}
+
+.page-right {
+  padding: 0 36px;
+  background-color: #fff;
+}
+
+.page-right-top-text{
+  margin: 0;
+  padding:   5px 0;
+  width: 70%;
+  font-size: 13px;
+  background-color: rgb(1, 182, 182);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form{
+  padding: 35px 0;
+}
+
+.form {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  margin: 2px 0;
+  padding:  4px 5px;
+  outline: none;
+  border:  1.5px solid rgb(1, 182, 182) ;
+}
+
+.form-btn{
+  margin: 0;
+  margin-top: 15px;
+  padding:  5px 0;
+  color: #fff;
+  background-color: rgb(1, 182, 182);
+  border: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  text-transform: uppercase;
+  border: 1px solid rgb(1, 182, 182);
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.form-btn:hover{
+  color: rgb(1, 182, 182);
+  background-color: #fff;
+}

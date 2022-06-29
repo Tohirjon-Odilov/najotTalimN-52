@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+}
+
+.flag{
+  width: 700px;
+  height: 400px;
+  display: block;
+  box-shadow: 1px 1px 10px 2px;
+  background:  linear-gradient(to bottom, #009DE0 31%, #E1001A 31% 33%, white 33% 67%, #E1001A 67% 69%, #0BA25A 69%);
+}
