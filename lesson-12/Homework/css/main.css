@@ -1,0 +1,112 @@
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v30-latin-500.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 0;
+}
+
+.hero-content:hover+.aside {
+  display: block;
+}
+
+.hero-list {
+  width: 1366px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  list-style: none;
+  background-color: #fff;
+}
+
+.hero-item {
+  padding: 21px 0px;
+  width: 300px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+}
+
+.hero-number {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00A0E3;
+  opacity: 0.3;
+}
+
+.hero-text {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #464646;
+}
+
+.aside {
+  padding: 75px 35px 36px 63px;
+  width: 550px;
+  height: 100vh;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.1);
+}
+
+.aside:hover {
+  display: block;
+}
+
+.aside-x {
+  margin: 19px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.aside-x .aside {
+  display: none;
+}
