@@ -20,14 +20,14 @@
 
         <div class="google-map" style="width: 100%">
           <div style="width: 100%">
-            <iframe width="100%" height="631" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            <iframe width="100%" height="630" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
               src="https://maps.google.com/maps?width=100%25&amp;height=631&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
               <a href="https://www.gps.ie/farm-gps/">GPS Navigation</a>
             </iframe>
           </div>
         </div>
 
-        <div class="hero-content">
+        <div class="hero-content" id="hero-content">
           <ol class="hero-list">
             <li class="hero-item">
               <p class="hero-number">14</p>
@@ -35,11 +35,11 @@
             </li>
             <li class="hero-item">
               <p class="hero-number">3000+</p>
-              <p class="hero-text">единиц оборудования произвели  </p>
+              <p class="hero-text">единиц оборудования произвели </p>
             </li>
             <li class="hero-item">
               <p class="hero-number">5000+</p>
-              <p class="hero-text">проектов выполнили 
+              <p class="hero-text">проектов выполнили
                 по проектированию</p>
             </li>
             <li class="hero-item">
@@ -48,15 +48,71 @@
             </li>
           </ol>
         </div>
-        
-        <div class="aside">
+
+        <div class="aside" id="aside">
           <img src="./images/x.svg" alt="Block hidden img" width="24" height="24" class="aside-x">
+          <h2 class="aside-title">
+            Поставка оборудования водоподготовки
+            для водоснабжения поселка. ООО «УЗР ДБ»
+          </h2>
+
+          <div class="aside-imgs">
+            <div class="aside-left-img">
+              <img src="./images/image.png" alt="Fabric img">
+            </div>
+            <div class="aside-subimgs">
+              <img src="./images/image-1.png" alt="Fabric img" class="aside-subimg">
+              <img src="./images/image-1.png" alt="Fabric img" class="aside-subimg">
+              <img src="./images/image-1.png" alt="Fabric img" class="aside-subimg">
+            </div>
+          </div>
+
+          <div class="aside-content">
+            <ul class="aside-content-list">
+              <li class="item">Назначение очищенной воды:</li>
+              <li class="item">Назначение очищенной воды:</li>
+              <li class="item">Назначение очищенной воды:</li>
+              <li class="item">Назначение очищенной воды:</li>
+              <li class="item">Назначение очищенной воды:</li>
+              <li class="item">Назначение очищенной воды:</li>
+            </ul>
+            <ul class="aside-content-list">
+              <li class="item">питьевое водоснабжение</li>
+              <li class="item">артезианские скважины</li>
+              <li class="item">до 2000 м3/сут</li>
+              <li class="item">СанПин «Вода питьевая»</li>
+              <li class="item">частицы песка, окалины и других твердые частицы, взвешенные вещества, железо, марганец, жесткость</li>
+              <li class="item">180 м2</li>
+            </ul>
+          </div>
+
+          <div class="aside-footer">
+            <p class="footer-text">
+              Поставка и пусконаладка фильтров сетчатых ПВО-ASF-AF-203S, аэрационных колонн на базе танка 42х72 ПВО-АЭК-16, фильтров-осветлителей ПВО-01FK04-S-XIV-Z и установок обратного осмоса ПВО-RO-20 для нужд заказчика ООО «УЗР ДБ».
+            </p>
+          </div>
+
         </div>
 
       </div>
       <!-- </div> -->
     </section>
   </main>
+
+
+  
+  <!-- javascript -->
+  
+  <script>
+
+    var close = document.querySelector('.aside-x');
+    var aside = document.querySelector('#aside');
+    var openAside = document.querySelector('#hero-content');
+
+    close.onclick = () => aside.style.display = 'none';      
+    openAside.onclick = () => aside.style.display = 'block';      
+    
+  </script>
 
 </body>
 

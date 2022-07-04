@@ -84,13 +84,14 @@ body {
 }
 
 .aside {
-  padding: 75px 35px 36px 63px;
-  width: 550px;
-  height: 100vh;
+  padding: 70px 63px 36px 35px;
+  width: 645px;
+  height: 630px;
   display: none;
   position: absolute;
   top: 0;
   right: 0;
+  overflow: auto;
   background: #FFFFFF;
   box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.1);
 }
@@ -103,10 +104,81 @@ body {
   margin: 19px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 10px;
   cursor: pointer;
 }
 
 .aside-x .aside {
   display: none;
+}
+
+.aside-title {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #464646;
+}
+
+.aside-imgs {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+  height: 340px;
+}
+
+.aside-left-img {
+  width: 100%;
+}
+
+.aside-left-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.aside-subimgs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.aside-subimgs img {
+  height: 100px;
+}
+
+.aside-content {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.aside-content-list {
+  width: 40%;
+  list-style: none;
+}
+
+.aside-content-list:last-child {
+  width: 60%;
+  text-align: end;
+}
+
+.aside-content-list:first-child .item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #464646;
+}
+
+.aside-footer{
+  width: 100%;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #464646;
 }
