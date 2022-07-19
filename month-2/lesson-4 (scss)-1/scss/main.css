@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-section {
+  height: 100vh;
+  background-color: #FFCA3A;
+}
+
+.hero-section .hero .hero__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.hero-section .hero .hero__list .hero__item {
+  margin: 70px 0;
+  padding: 0 107px;
+  width: 50%;
+}
+
+.hero-section .hero .hero__list .hero__item:first-child {
+  border-right: 1px solid #858585;
+}
+
+.hero-section .hero .hero__list .hero__item img {
+  margin-bottom: 24px;
+}
+
+.hero-section .hero .hero__list .hero__item h2 {
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #011F3A;
+}
+
+.hero-section .hero .hero__list .hero__item p {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #3D5675;
+}
+
+.hero-section .hero .hero__list .hero__item a {
+  padding: 13px 25px;
+  display: inline-block;
+  background: #FFFFFF;
+  border-radius: 44px;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 18px;
+  letter-spacing: 1.96px;
+  text-transform: uppercase;
+  color: #3D5675;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.hero-section .hero .hero__list .hero__item a:hover {
+  background-color: crimson;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=main.css.map */
