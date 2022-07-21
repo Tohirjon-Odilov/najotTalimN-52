@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5BB8B7;
+    font-family: cursive;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #222;
+    color: white;
+}
+
+tr {
+    background-color: #202932;
+}
+
+th {
+    padding: 15px 30px 15px 10px;
+    font-weight: 400;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd),
+tfoot tr {
+    background-color: #2C3848;
+}
+
+tbody td {
+    padding: 10px 140px 10px 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #529392;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
