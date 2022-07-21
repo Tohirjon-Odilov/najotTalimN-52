@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid #222;
+}
+
+th {
+  padding: 15px 30px;
+  font-weight: 400;
+}
+
+td {
+  padding: 10px 20px;
+}
+
+tfoot td {
+  text-align: left;
+}/*# sourceMappingURL=table-2.css.map */

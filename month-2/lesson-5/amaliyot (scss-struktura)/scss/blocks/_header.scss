@@ -1,0 +1,20 @@
+.header {
+    padding: 44px 0;
+    @include flex(space-between);
+}
+
+.header-list {
+    @include flex(flex-start);
+    gap: 33px;
+    list-style: none;
+}
+
+.header-item a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    text-decoration: none;
+}

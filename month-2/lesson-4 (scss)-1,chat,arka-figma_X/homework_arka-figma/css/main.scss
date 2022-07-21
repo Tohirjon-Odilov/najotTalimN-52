@@ -62,6 +62,10 @@ body {
     letter-spacing: 1.96px;
     text-transform: uppercase;
     color: #011F3A;
+    &:first-child::before {
+        content: " ";
+        background: url(../img/star.svg) center no-repeat;
+    }
 }
 
 .shop__wrapper {

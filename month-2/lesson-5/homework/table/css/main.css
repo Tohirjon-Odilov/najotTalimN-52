@@ -1,0 +1,26 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid #222;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  padding: 15px 30px;
+  font-weight: 400;
+}
+
+td {
+  padding: 10px 20px;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
