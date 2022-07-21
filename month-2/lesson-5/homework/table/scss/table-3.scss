@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid #222;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead tr {
+    background-color: royalblue;
+    text-align: left;
+}
+
+th {
+    padding: 15px 30px 15px 5px;
+    font-weight: bolder;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+td {
+    font-weight: 500;
+    padding: 10px 35px 10px 5px;
+}
