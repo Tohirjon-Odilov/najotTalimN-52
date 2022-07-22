@@ -1,91 +1,91 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .card {
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  -khtml-user-select: none;
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Old versions of Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
 ::selection {
-  background: #000;
-  color: royalblue;
+    background: #000;
+    color: royalblue;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
-  background-color: rgb(221, 216, 216);
-  width: 50px;
+    background-color: rgb(221, 216, 216);
+    width: 50px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: crimson;
-  border-radius: 10px;
+    background: crimson;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: #b30000;
+    background: #b30000;
 }
 
 body {
-  font-family: cursive;
-  overflow: hidden;
+    font-family: cursive;
+    overflow: hidden;
 }
 
 .div {
-  margin: 0 100px;
-  overflow: auto;
+    margin: 0 100px;
+    overflow: auto;
 }
 
 .card-wrapper {
-  width: 2660px;
-  margin: 50px 20px;
-  display: flex;
-  gap: 20px;
+    width: 2660px;
+    margin: 50px 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .card {
-  padding: 15px;
-  width: 250px;
-  height: 150px;
-  border-radius: 10px;
-  color: #fff;
-  background: url(../images/image\ 28.png) bottom right no-repeat, #FF7F10;
+    padding: 15px;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    color: #fff;
+    background: url(../images/image\ 28.png) bottom right no-repeat, #FF7F10;
 }
 
 .card:nth-child(2n) {
-  background: url(../images/image\ 27.png) bottom right no-repeat, #CE3459;
+    background: url(../images/image\ 27.png) bottom right no-repeat, #CE3459;
 }
 
 .card:nth-child(3n) {
-  background: url(../images/image\ 26.png) bottom right no-repeat, #DFF850;
+    background: url(../images/image\ 26.png) bottom right no-repeat, #DFF850;
 }
 
 .card a {
-  margin-top: 20px;
-  font-size: 14px;
-  padding: 5px 8px;
-  display: inline-block;
-  text-transform: uppercase;
-  color: #FF7F10;
-  background-color: #fff;
-  border-radius: 20px;
-  text-decoration: none;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 5px 8px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #FF7F10;
+    background-color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
 }
