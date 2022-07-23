@@ -17,4 +17,8 @@
     text-transform: uppercase;
     color: #83888F;
     text-decoration: none;
+    transition: all .3s;
+    &:hover {
+        color: #333D4B;
+    }
 }

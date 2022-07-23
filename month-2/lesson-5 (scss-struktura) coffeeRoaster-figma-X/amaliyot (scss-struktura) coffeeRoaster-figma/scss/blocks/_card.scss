@@ -1,0 +1,44 @@
+.card {}
+
+.card__list {
+    padding: 135px 0 0 0;
+    @include flex(space-between);
+    align-items: flex-start;
+    gap: 30px;
+    background: url(../../imgs/bg-card.png) top / 100% no-repeat;
+    list-style: none;
+}
+
+.card__item {
+    height: 399px;
+}
+
+.img-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper__img {
+    width: 256px;
+    height: 193px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card__item h2 {
+    font-family: 'Fraunces', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #333D4B;
+}
+
+.card__item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #333D4B;
+}
