@@ -28,10 +28,17 @@
     color: #FEFCF7;
 }
 
-.hero__link {
+.btn-green {
+    background: #0E8784;
+    color: #FEFCF7;
+    &:hover {
+        background: #66D2CF;
+    }
+}
+
+.btn {
     padding: 15px 31px;
     display: inline-block;
-    background: #0E8784;
     border-radius: 6px;
     font-family: 'Fraunces', serif;
     text-decoration: none;
@@ -40,9 +47,5 @@
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-    color: #FEFCF7;
     transition: all .3s;
-    &:hover {
-        background: #66D2CF;
-    }
 }

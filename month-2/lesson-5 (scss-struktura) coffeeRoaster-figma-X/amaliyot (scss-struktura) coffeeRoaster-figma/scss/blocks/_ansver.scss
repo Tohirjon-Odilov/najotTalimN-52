@@ -1,0 +1,71 @@
+.ansver {
+    margin-bottom: 351px;
+    padding-top: 100px;
+    width: 100%;
+    min-height: 577px;
+    background-color: #2C343E;
+    border-radius: 10px;
+    position: relative;
+}
+
+.ansver__title {
+    width: 540px;
+    margin: 0 auto;
+    h2 {
+        font-family: 'Fraunces', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: #FEFCF7;
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #FEFCF7;
+    }
+}
+
+.ansver__ul-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: -29%;
+}
+
+.ansver__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    text-align: center;
+}
+
+.ansver__item {
+    background: #0E8784;
+    border-radius: 8px;
+    margin: 0;
+    padding: 72px 48px 48px;
+    width: 350px;
+    h3 {
+        color: #FEFCF7;
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FEFCF7;
+    }
+}
+
+.ansver__img-wrapper {
+    margin: 0 auto;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: flex-end;
+}
