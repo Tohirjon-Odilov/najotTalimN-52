@@ -1,0 +1,17 @@
+// body{}
+
+.card{
+ width: 500px;
+ height: 500px;
+ background-color: khaki;
+ border-radius: 10px ;
+ @include borderRadius(true)
+}
+
+@mixin borderRadius($radius: true){
+  @if ($radius){
+    border-radius: 10px;
+  }@else{
+    border-radius: 0;
+  }
+}

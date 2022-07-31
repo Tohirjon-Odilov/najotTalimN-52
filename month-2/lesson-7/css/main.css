@@ -1,0 +1,45 @@
+body{
+ margin: 0;
+ padding: 0;
+ transition: all .3s;
+ background-color: green;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+
+.card::before{
+ content: "Green - 1";
+ color: #fff;
+ font-weight: 900;
+ font-family: cursive;
+ text-transform: capitalize;
+}
+
+@media (min-width: 700px) and (max-width: 900px){
+ body{
+  background-color: red;
+ }
+ .card::before{
+  content: "Red - 2";
+ }
+}
+
+@media (min-width:500px) and (max-width: 700px){
+ body{
+  background-color: darkgoldenrod;
+ }
+ .card::before{
+  content: "darkgoldenrod - 3";
+ }
+}
+
+@media (min-width: 0px) and (max-width: 500px){
+ body{
+  background-color: darkcyan;
+ }
+ .card::before{
+  content: "darkcyan - 4";
+ }
+}
