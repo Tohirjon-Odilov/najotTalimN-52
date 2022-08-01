@@ -15,19 +15,22 @@
 		<title>Admin Dashboard</title>
 	</head>
 	<body>
+		<!-- Wrapper start -->
 		<div class="wrapper">
-			<!-- Site aside Start  -->
+			<!-- aside Start  -->
 			<div class="site-aside mb-site-aside">
 				<div class="aside">
-					<div class="aside__title-wrapper">
-						<img
-							src="./images/site-brand.svg"
-							width="32"
-							height="32"
-							alt="site-brand"
-						/>
-						<h2 class="aside__title thidden mobile-checked">Dashboard Kit</h2>
-					</div>
+					<a href="#">
+						<div class="aside__title-wrapper">
+							<img
+								src="./images/site-brand.svg"
+								width="32"
+								height="32"
+								alt="site-brand"
+							/>
+							<h2 class="aside__title thidden mobile-checked">Dashboard Kit</h2>
+						</div>
+					</a>
 					<ul class="aside__list">
 						<li class="aside__item">
 							<input
@@ -58,6 +61,7 @@
 								type="radio"
 								id="active2"
 								name="num"
+								checked
 							/>
 							<label for="active2">
 								<div class="svg-wrapper">
@@ -238,16 +242,275 @@
 					</div>
 				</div>
 			</div>
-			<!-- Site aside End  -->
+			<!-- aside End  -->
 
-			<!-- Site hero Start -->
-			<div class="hero">
+			<!-- hero Start -->
+			<div class="hero-wrapper">
 				<div class="hero">
+					<div class="hero__header">
+						<h2 class="hero__header-title">Tickets</h2>
+						<div class="hero__header-content">
+							<img
+								class="hero-search"
+								src="./images/search.svg"
+								alt="Magnifying glass"
+							/>
+							<img class="hero-new" src="./images/new.svg" alt="Bell" />
+							<span class="line"></span>
+							<strong class="hero__avatar-name">Jones Ferdinand</strong>
+							<img
+								class="hero-avatar"
+								src="./images/_header.svg"
+								alt="Jones Ferdinand"
+							/>
+						</div>
+					</div>
+					<!-- table start -->
+					<div class="hero__table">
+						<div class="hero__table-header">
+							<h3>All tickets</h3>
+							<div class="hero__table-options">
+								<div class="sort-wrapper">
+									<img src="./images/sort.svg" alt="Sort" />
+									<p>Sort</p>
+								</div>
+								<div class="filter-wrapper">
+									<img src="./images/filter.svg" alt="Filter" />
+									<p>Filter</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Ticket details</th>
+										<th>Customer name</th>
+										<th>Date</th>
+										<th>Priority</th>
+									</tr>
+								</thead>
 
+								<tbody>
+									<tr class="margin">
+										<td>
+											<img src="./images/1.svg" width="44" height="44" alt="avatar" />
+											<div class="table__text-wrapper">
+												<p>Contact Email not Linked</p>
+												<span>Updated 1 day ago</span>
+											</div>
+										</td>
+										<td>
+											<p>Tom Cruise</p>
+											<span>on 24.05.2019</span>
+										</td>
+										<td>
+											<p>May 26, 2019</p>
+											<span>6:30 PM</span>
+										</td>
+										<td>
+											<span class="color">High</span>
+										</td>
+										<td>
+											<img
+												src="./images/menu-settings.svg"
+												alt="more-vertical"
+											/>
+										</td>
+									</tr>
+									<tr class="margin">
+										<td>
+											<img src="./images/3.svg" width="44" height="44" alt="avatar" />
+											<div class="table__text-wrapper">
+												<p>Adding Images to Featured Posts</p>
+												<span>Updated 1 day ago</span>
+											</div>
+										</td>
+										<td>
+											<p>Matt Damon</p>
+											<span>on 24.05.2019</span>
+										</td>
+										<td>
+											<p>May 26, 2019</p>
+											<span>6:30 PM</span>
+										</td>
+										<td>
+											<span class="color yellow">Low</span>
+										</td>
+										<td>
+											<img
+												src="./images/menu-settings.svg"
+												alt="more-vertical"
+											/>
+										</td>
+									</tr>
+									<tr class="margin">
+										<td>
+											<img src="./images/4.svg" width="44" height="44" alt="avatar" />
+											<div class="table__text-wrapper">
+												<p>When will I be charged this month?</p>
+												<span>Updated 1 day ago</span>
+											</div>
+										</td>
+										<td>
+											<p>Robert Downey</p>
+											<span>on 24.05.2019</span>
+										</td>
+										<td>
+											<p>May 26, 2019</p>
+											<span>6:30 PM</span>
+										</td>
+										<td>
+											<span class="color">High</span>
+										</td>
+										<td>
+											<img
+												src="./images/menu-settings.svg"
+												alt="more-vertical"
+											/>
+										</td>
+									</tr>
+									<tr class="margin">
+										<td>
+											<img src="./images/5.svg" width="44" height="44" alt="avatar" />
+											<div class="table__text-wrapper">
+												<p>Payment not going through</p>
+												<span>Updated 2 days ago</span>
+											</div>
+										</td>
+										<td>
+											<p>Christian Bale</p>
+											<span>on 24.05.2019</span>
+										</td>
+										<td>
+											<p>May 26, 2019</p>
+											<span>6:30 PM</span>
+										</td>
+										<td>
+											<span class="color lightblue">Normal</span>
+										</td>
+										<td>
+											<img
+												src="./images/menu-settings.svg"
+												alt="more-vertical"
+											/>
+										</td>
+									</tr>
+									<tr class="margin">
+										<td>
+											<img src="./images/6.svg" width="44" height="44" alt="avatar" />
+											<div class="table__text-wrapper">
+												<p>Unable to add replies</p>
+												<span>Updated 2 days ago</span>
+											</div>
+										</td>
+										<td>
+											<p>Henry Cavil</p>
+											<span>on 24.05.2019</span>
+										</td>
+										<td>
+											<p>May 26, 2019</p>
+											<span>6:30 PM</span>
+										</td>
+										<td>
+											<span class="color">High</span>
+										</td>
+										<td>
+											<img
+												src="./images/menu-settings.svg"
+												alt="more-vertical"
+											/>
+										</td>
+									</tr>
+									<tr class="margin">
+										<td>
+											<img src="./images/7.svg" width="44" height="44" alt="avatar" />
+											<div class="table__text-wrapper">
+												<p>Downtime since last week</p>
+												<span>Updated 3 days ago</span>
+											</div>
+										</td>
+										<td>
+											<p>Chris Evans</p>
+											<span>on 23.05.2019</span>
+										</td>
+										<td>
+											<p>May 26, 2019</p>
+											<span>6:30 PM</span>
+										</td>
+										<td>
+											<span class="color lightblue">Normal</span>
+										</td>
+										<td>
+											<img
+												src="./images/menu-settings.svg"
+												alt="more-vertical"
+											/>
+										</td>
+									</tr>
+									<tr class="margin">
+										<td>
+											<img src="./images/8.svg" width="44" height="44" alt="avatar" />
+											<div class="table__text-wrapper">
+												<p>Referral Bonus</p>
+												<span>Updated 4 day ago</span>
+											</div>
+										</td>
+										<td>
+											<p>Sam Smith</p>
+											<span>on 22.05.2019</span>
+										</td>
+										<td>
+											<p>May 25, 2019</p>
+											<span>11:30 AM</span>
+										</td>
+										<td>
+											<span class="color yellow">Low</span>
+										</td>
+										<td>
+											<img
+												src="./images/menu-settings.svg"
+												alt="more-vertical"
+											/>
+										</td>
+									</tr>
+									<tr class="margin">
+										<td>
+											<img src="./images/9.svg" width="44" height="44" alt="avatar" />
+											<div class="table__text-wrapper">
+												<p>How do I change my password?</p>
+												<span>Updated 6 days ago</span>
+											</div>
+										</td>
+										<td>
+											<p>Steve Rogers</p>
+											<span>on 21.05.2019</span>
+										</td>
+										<td>
+											<p>May 24, 2019</p>
+											<span>1:00 PM</span>
+										</td>
+										<td>
+											<span class="color lightblue">Normal</span>
+										</td>
+										<td>
+											<img
+												src="./images/menu-settings.svg"
+												alt="more-vertical"
+											/>
+										</td>
+									</tr>
+								</tbody>
+
+							</table>
+						</div>
+					</div>
+					<!-- table end -->
 				</div>
 			</div>
+			<!-- hero End -->
 		</div>
-		<!-- Site hero End -->
+		<!-- Wrapper End -->
 
 		<script src="./js/script.js"></script>
 	</body>

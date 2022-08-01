@@ -1,13 +1,17 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     transition: all .3s;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
+    background-color: rgba(195, 195, 195, 0.13);
     font-family: 'Mulish', sans-serif;
 }
 
-img{
+img {
     object-fit: cover;
 }
