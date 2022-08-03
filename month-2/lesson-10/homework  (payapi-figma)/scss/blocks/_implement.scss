@@ -1,0 +1,35 @@
+.implement-section{
+ padding-bottom: 146px;
+ background-image: url(./../../images/implement-bg.png);
+ background-repeat: no-repeat;
+ background-position: bottom right;
+ display: none;
+}
+
+.implement__wrapper {
+ @include fl();
+}
+
+.implement-first{
+ margin-bottom: 150px;
+}
+
+.implement__content{
+ width: 445px;
+}
+
+.implement__title {
+ font-family: 'DM Serif Display', sans-serif;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 48px;
+ line-height: 56px;
+ color: #36536B;
+}
+
+.implement__text {
+ font-weight: 400;
+ font-size: 15px;
+ line-height: 28px;
+ color: #6C8294;
+}

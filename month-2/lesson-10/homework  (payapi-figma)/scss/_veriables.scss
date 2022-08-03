@@ -1,0 +1,5 @@
+@mixin fl($ai: center, $jc:space-between) {
+ display: flex;
+ align-items: $ai;
+ justify-content: $jc;
+}
