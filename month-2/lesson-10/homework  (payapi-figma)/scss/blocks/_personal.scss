@@ -1,21 +1,26 @@
-.personal-section{
- display: none;
+.personal-section {
+ // display: none;
 }
 
 .personal__list {
  margin: 0 0 96px 0;
  padding: 0;
- @include fl();
+ @include fl(space-between, flex-start);
  text-align: center;
  list-style: none;
 }
 
-.personal__item{
- width: 350px;
+.personal__item {
+ max-width: 350px;
+
+ img {
+  margin-bottom: 32px;
+ }
 }
 
 .personal__title {
  margin: 0;
+ margin-bottom: 16px;
  padding: 0;
  font-weight: 700;
  font-size: 18px;
@@ -25,6 +30,7 @@
 }
 
 .personal__text {
+ margin: 0;
  font-weight: 400;
  font-size: 15px;
  line-height: 25px;
@@ -32,7 +38,7 @@
  color: #6C8294;
 }
 
-.personal__footer{
+.personal__footer {
  @include fl();
  margin-bottom: 96px;
 }
@@ -50,7 +56,7 @@
 
 .personal__form {
  margin: 0;
- width: 445px;
+ max-width: 445px;
 }
 
 .personal__btn-wrapper {
@@ -60,8 +66,76 @@
  border-radius: 24px;
 }
 
-.personal__btn-wrapper input{
+.personal__btn-wrapper input {
  background-color: transparent;
  border: none;
  margin-left: 27px;
 }
+
+@media only screen and (max-width: 840px) {
+ .personal__footer {
+  margin-bottom: 100px;
+  flex-direction: column;
+  gap: 40px;
+ }
+}
+
+@media only screen and (max-width:700px) {
+ .personal__list {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+ }
+}
+
+@media only screen and (max-width: 500px) {
+ .personal-section{
+  margin-bottom: 80px;
+ }
+ 
+ .personal__footer-title {
+  font-size: 32px;
+  line-height: 36px;
+ }
+
+ .personal__form {
+  width: 100%;
+ }
+
+ .personal__footer{
+  gap: 32px;
+ }
+ 
+ .personal__btn-wrapper{
+  margin-bottom: 16px !important;
+  width: 100%;
+  flex-direction: column !important;  
+  align-items: flex-start;
+  input{
+   margin: 0;
+   padding: 16px 0px 14px 27px !important;
+  }
+ }
+}
+
+// .hero__btn-wrapper{
+//  margin-bottom: 16px !important;
+//  max-width: 100%;
+//  flex-direction: column;
+//  align-items: flex-start;
+//  input{
+//   margin: 0;
+//   padding: 16px 0px 14px 27px !important;
+//  }
+// }
+
+// .d-none{
+//  display: block;
+//  margin: 0 auto;
+//  width: 100%;
+// }
+
+// .d-block{
+//  display: none;
+// }

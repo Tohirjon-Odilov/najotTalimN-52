@@ -1,24 +1,25 @@
-.implement-section{
+.implement-section {
  padding-bottom: 146px;
  background-image: url(./../../images/implement-bg.png);
  background-repeat: no-repeat;
  background-position: bottom right;
- display: none;
+ // display: none;
 }
 
 .implement__wrapper {
  @include fl();
 }
 
-.implement-first{
+.implement-first {
  margin-bottom: 150px;
 }
 
-.implement__content{
- width: 445px;
+.implement__content {
+ max-width: 445px;
 }
 
 .implement__title {
+ margin: 0 0 24px 0;
  font-family: 'DM Serif Display', sans-serif;
  font-style: normal;
  font-weight: 400;
@@ -28,8 +29,54 @@
 }
 
 .implement__text {
+ margin: 0;
  font-weight: 400;
  font-size: 15px;
  line-height: 28px;
  color: #6C8294;
 }
+
+@media only screen and (max-width: 980px) {
+ .implement-section{
+  padding-bottom: 100px;
+  background-image: none;
+ }
+
+ .implement__wrapper {
+  flex-direction: column;
+  text-align: center;
+ }
+ 
+ .implement-first {
+  margin-bottom: 100px;
+  img {
+   margin-bottom: 48px;
+   width: 100%;
+   max-width: 566px;
+   height: auto;
+  }
+ }
+
+ .implement-second {
+  flex-direction: column-reverse;
+
+  img {
+   margin-bottom: 48px;
+   width: 100%;
+   max-width: 566px;
+   height: auto;
+  }
+ }
+
+ .implement__content {
+  max-width: 573px;
+ }
+
+ .implement__title {
+  margin-bottom: 48px;
+ }
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width:500px) {}

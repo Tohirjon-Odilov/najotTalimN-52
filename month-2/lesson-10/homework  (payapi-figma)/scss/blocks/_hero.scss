@@ -1,22 +1,21 @@
 .hero-section {
- position: relative;
  margin-bottom: 74px;
 }
 
-.hero-section::after {
- content: "";
- width: 650px;
- height: 650px;
- position: absolute;
- top: -224px;
- right: 0;
- display: block;
- background-image: url(./../../images/hero-img.png);
- background-size: 650px 650px;
- background-position: top right;
- background-repeat: no-repeat;
- z-index: -1;
-}
+// .hero-section::after {
+//  content: "";
+//  width: 650px;
+//  height: 650px;
+//  position: absolute;
+//  top: -224px;
+//  right: 0;
+//  display: block;
+//  background-image: url(./../../images/hero-img.png);
+//  background-size: 650px 650px;
+//  background-position: top right;
+//  background-repeat: no-repeat;
+//  z-index: -1;
+// }
 
 .hero {
  @include fl();
@@ -39,7 +38,11 @@
 
 .hero__form {
  margin: 0 0 16px 0;
- width: 445px;
+ max-width: 445px;
+}
+
+.d-none{
+ display: none;
 }
 
 .hero__btn-wrapper {
@@ -74,21 +77,37 @@
  text-align: center;
 }
 
-@media only screen and (max-width: 900px) {
+.hero__tablet-img {
+ display: none;
+}
 
- .hero{
+@media only screen and (max-width: 900px) {
+ .hero-section {
+  margin-bottom: 100px;
+ }
+
+ .hero {
   flex-direction: column-reverse;
  }
 
- .hero__img{
+ .hero__img {
   margin-bottom: 48px;
  }
 
- .hero__content{
+ .hero__tablet-img {
+  margin: 0 auto;
+  display: block;
+ }
+
+ .hero__desktop-img {
+  display: none;
+ }
+
+ .hero__content {
   text-align: center;
  }
 
- .hero__form{
+ .hero__form {
   margin: 0 auto 16px;
  }
 
@@ -98,11 +117,44 @@
   line-height: 56px;
  }
 
- .hero__text{
+ .hero__text {
   margin: 0px;
  }
 }
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width:500px) {
+ .hero-section {
+  margin-bottom: 80px !important;
+ }
 
-@media only screen and (max-width:500px) {}
+ .hero__img {
+  margin-bottom: 24px !important;
+ }
+
+ .hero__title {
+  margin-bottom: 24px !important;
+  font-size: 32px;
+  line-height: 36px;
+ }
+
+ .hero__btn-wrapper{
+  margin-bottom: 16px !important;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  input{
+   margin: 0;
+   padding: 16px 0px 14px 27px !important;
+  }
+ }
+
+ .d-none{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+ }
+
+ .d-block{
+  display: none;
+ }
+}

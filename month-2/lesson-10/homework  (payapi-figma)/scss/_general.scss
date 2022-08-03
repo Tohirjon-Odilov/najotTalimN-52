@@ -1,15 +1,40 @@
-*{
+* {
     box-sizing: border-box;
     transition: all .3s;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
-    background-color: #EDF3F8;
+    background-color: #EDF3F8 !important;
     font-family: "DM Serif Display", sans-serif;
     font-family: "Public Sans", sans-serif;
+    display: block;
+    background-image: url(./../../images/hero-img.png);
+    background-size: 650px 650px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
-img{
+img {
     object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        // background-color: #EDF3F8;
+        background-image: url("../images/hero-img-tablet.png") !important;
+        background: no-repeat;
+        background-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-image: url("../images/hero-img-mobile.png") !important;
+        // background-color: #EDF3F8;
+        background: no-repeat;
+        background-size: 100%;
+    }
 }
