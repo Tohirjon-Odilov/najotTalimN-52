@@ -1,0 +1,9 @@
+@mixin borderRadius($radius: true, ){
+ @if ($radius){
+   border-radius: 10px;
+   background-color: crimson;
+ }@else{
+   border-radius: 0;
+   background-color: royalblue;
+ }
+}
