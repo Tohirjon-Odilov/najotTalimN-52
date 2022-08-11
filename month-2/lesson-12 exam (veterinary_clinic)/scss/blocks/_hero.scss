@@ -1,0 +1,73 @@
+.hero-section {
+ padding: 253px 30px 200px;
+ background-image: url(../../images/pet.png), url(../../images/hero-bird.png), url(../../images/pet-1.png);
+ background-repeat: no-repeat;
+ background-position-x: calc(50% - 485px), calc(50% + 680px), calc(50% + 645px);
+ background-position-y: 2px, calc(50% + 300px), calc(50% + 365px);
+}
+
+.hero {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.hero__img img {
+ position: relative;
+ top: 57px;
+ left: 25px;
+ z-index: 1;
+}
+
+.header__content {
+ width: 608px;
+}
+
+.hero__title {
+ margin: 0 0 29px 0;
+ padding: 0;
+ font-weight: 700;
+ font-size: 70px;
+ line-height: 64px;
+ color: #333333;
+
+ span {
+  color: #78C0DE;
+ }
+}
+
+.hero__wrapper-text {
+ width: 495px;
+}
+
+.hero__text {
+ margin: 0;
+ margin-bottom: 38px;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 21px;
+ color: #949494;
+}
+
+.hero__link {
+ display: inline-block;
+ text-decoration: none;
+ padding: 15px 48px 16px 47px;
+ background: #333333;
+ border-radius: 3px;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 21px;
+ color: #FFFFFF;
+ transition: all .3s;
+}
+
+.hero__link:hover {
+ background: #FFBD54;
+ border-radius: 3px;
+ color: #333333;
+}
+
+.hero__link:active {
+ opacity: .6;
+}

@@ -1,0 +1,76 @@
+.map {
+ padding-bottom: 247px;
+ display: flex;
+}
+
+iframe {
+ border: none;
+ height: 100%;
+}
+
+.map__content {
+ width: 848px;
+ padding: 62px 0 74px 135px;
+ background-image: url(../../images/map-bg.png);
+ background-size: 110% 100%;
+ background-repeat: no-repeat;
+}
+
+.map form {
+ width: 375px;
+ flex-direction: column;
+}
+
+.map__title {
+ margin: 0;
+ margin-bottom: 14px;
+ font-weight: 700;
+ font-size: 48px;
+ line-height: 62px;
+ color: #FFFFFF;
+}
+
+.map__text {
+ margin: 0;
+ margin-bottom: 29px;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 20px;
+ color: #949494;
+}
+
+.map form input {
+ margin-bottom: 14px;
+ width: 100%;
+ height: 100%;
+ border-radius: 0 !important;
+}
+
+.map textarea {
+ height: 180px;
+ margin-bottom: 30px;
+ padding: 22px 17px;
+ text-align: start;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 21px;
+ display: flex;
+ align-items: center;
+ color: #dbdbdb;
+}
+
+.map form button {
+ margin: 0 !important;
+ width: 231px;
+ background: #FFBD54 !important;
+ border-radius: 0px;
+}
+
+.map__btn:hover {
+ opacity: 0.8;
+}
+
+.map__btn:active {
+ opacity: .6;
+}

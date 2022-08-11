@@ -1,0 +1,26 @@
+@font-face {
+ font-family: 'Futura PT';
+ font-style: normal;
+ font-weight: 400;
+ src: local(''),
+      url('../fonts/FuturaPT-Book.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/FuturaPT-Book.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+ font-family: 'Futura PT';
+ font-style: normal;
+ font-weight: 500;
+ src: local(''),
+      url('../fonts/FuturaPT-Medium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/FuturaPT-Medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+ font-family: 'Futura PT';
+ font-style: normal;
+ font-weight: 700;
+ src: local(''),
+      url('../fonts/FuturaPT-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/FuturaPT-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
