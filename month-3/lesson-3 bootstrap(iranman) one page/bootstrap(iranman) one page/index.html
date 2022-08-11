@@ -7,36 +7,175 @@
 
 		<!-- Bootstrap css local file -->
 		<link rel="stylesheet" href="./css/bootstrap.min.css" />
-  
-  <!-- Site logotip -->
+
+		<!-- Bootstrap icons link -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+
+		<!-- Site logotip -->
 		<link
 			rel="shortcut icon"
-			href="./images/site-logo.svg"
+			href="./images/site-logo.png"
 			type="image/x-icon"
 		/>
 
-  <!-- Site name -->
-		<title>--------Site-------</title>
+		<!-- Site name -->
+		<title>Lesson-3</title>
 	</head>
 	<body>
-  
 		<!-- Header start   -->
-		<header class="site-header">
+		<!-- <header class="site-header">
 			<div class="container">
 				<div class="header">
-					<a href="/">
-						<img src="./images/site-logo.svg" alt="Site logo" />
-					</a>
+					
 				</div>
 			</div>
-		</header>
+		</header> -->
 		<!-- Header end -->
 
 		<!-- Main start -->
 		<main class="site-main">
 			<section class="hero-section">
 				<div class="container">
-					<div class="hero"></div>
+					<div class="movie">
+						<h2 class="movie__title fw-bold text-center mt-2 fs-1">
+							Movie catalog
+						</h2>
+						<div class="movie__content row">
+							<div class="movie__form col-lg-4">
+								<form class="mb-4">
+									<div class="mb-3">
+										<input
+											type="text"
+											class="form-control"
+											aria-describedby="textHelp"
+											value="ave"
+										/>
+									</div>
+									<div class="mb-3">
+										<input
+											type="text"
+											class="form-control"
+											aria-describedby="textHelp"
+											value="5"
+										/>
+									</div>
+									<select
+										class="form-select mb-3"
+										aria-label="Default select example"
+									>
+										<option selected>All</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+									<select
+										class="form-select mb-3"
+										aria-label="Default select example"
+									>
+										<option selected>Raiting high to low</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+									<button type="submit" class="w-100 btn btn-primary">
+										Search
+									</button>
+								</form>
+								<div class="movie__content-footer d-flex flex-column">
+									<h3 class="fs-2 fw-bold mb-2">Bookmarked movies</h3>
+									<div class="rounded-top border p-3 px-4">
+										<h4 class="card-text">Avengers: Infinity War</h4>
+										<a href="#link" class="btn btn-danger">Remove</a>
+									</div>
+									<div class="border p-3 px-4">
+										<h4 class="card-text">The Avengers</h4>
+										<a href="#link" class="btn btn-danger">Remove</a>
+									</div>
+									<div class="rounded-bottom border p-3 px-4">
+										<h4 class="card-text">12 Years a Slave</h4>
+										<a href="#link" class="btn btn-danger">Remove</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-8">
+								<h3 class="fs-4 fw-bold">Search result: 39</h3>
+								<div class="alert alert-info">
+									Use the form on the left to search for a movie
+								</div>
+								<div class="d-flex mb-5">
+									<div class="card me-3">
+										<div class="image-container">
+											<img
+												src="./images/avengers.jpg"
+												width="420"
+												height="190"
+												alt="Avengers"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="card-body">
+											<div class="card-title fs-4 fw-bold">
+												Avengers: Infinity War
+											</div>
+											<div class="card-text mb-3">
+												<i class="bi bi-calendar-fill"></i> 2018
+											</div>
+											<div class="card-text mb-3">
+												<i class="bi bi-star-fill text-warning"></i> 8.7
+											</div>
+											<div class="mb-2 btn btn-outline-primary">Watch trailer</div>
+											<div class="mb-2 mx-md-2 btn btn-outline-info">More info</div>
+											<div class="mb-2 btn btn-outline-success">Bookmark</div>
+										</div>
+									</div>
+
+									<div class="card ms-auto">
+										<div class="image-container">
+											<img
+												src="./images/ironman.jpg"
+												width="420"
+												height="190"
+												alt="Avengers"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="card-body">
+											<div class="card-title fs-4 fw-bold">The Avengers</div>
+											<div class="card-text mb-3">
+												<i class="bi bi-calendar-fill"></i> 2012
+											</div>
+											<div class="card-text mb-3">
+												<i class="bi bi-star-fill text-warning"></i> 8.1
+											</div>
+											<div class="mb-2 btn btn-outline-primary">Watch trailer</div>
+											<div class="mb-2 mx-md-2 btn btn-outline-info">More info</div>
+											<div class="mb-2 btn btn-outline-success">Bookmark</div>
+										</div>
+									</div>
+								</div>
+								<nav aria-label="Next page" class="d-flex justify-content-center">
+									<ul class="pagination pagination">
+										<li class="page-item active" aria-current="page">
+											<span class="page-link">1</span>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">2</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">3</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">4</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
