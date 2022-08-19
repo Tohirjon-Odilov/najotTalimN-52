@@ -51,4 +51,31 @@
 // 	console.log("Invalid operator");
 // }
 
-// let a = prompt("Son kiriting: ")
+let son1 = prompt("Enter first number:");
+let son2 = prompt("Enter second number:");
+let operation = prompt("Enter operator:");
+
+function calculator(son1, son2, operation) {
+	if (operation === "+") {
+		return son1 + son2;
+	} else if (operation === "-") {
+		if (son1 < son2) {
+			return 0;
+		} else {
+			return son1 - son2;
+		}
+	} else if (operation === "*") {
+		return son1 * son2;
+	} else if (operation === "/") {
+		let result = son1 / son2;
+		if (result % 2 === 0) {
+			return Math.round(result);
+		} else {
+			return Math.round(result);
+		}
+	} else {
+		return "Invalid operator";
+	}
+}
+
+console.log(calculator(son1, son2, operation));
