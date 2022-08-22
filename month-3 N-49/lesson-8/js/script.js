@@ -207,3 +207,8 @@ let yearsUntilRetirement_expression = function (name, year) {
 };
 
 console.log(yearsUntilRetirement_expression("John", 1990));
+
+let nimadir = function (firstName, lastName, age, country, city) {
+	return `Your name is ${firstName} ${lastName} and you are ${age} years old. You are from ${country} in ${city}.`;
+};
+console.log(nimadir("John", "Doe", "30", "USA", "New York"));
