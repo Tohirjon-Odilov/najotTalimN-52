@@ -11,24 +11,24 @@
 
 // hello(9);
 
-// function Car(brend, fast, color, price) {
-// 	this.brend = brend;
-// 	this.fast = fast;
-// 	this.color = color;
-// 	this.price = price;
-// }
+function Car(brend, fast, color, price) {
+	this.brend = brend;
+	this.fast = fast;
+	this.color = color;
+	this.price = price;
+}
 
-// Car.prototype.getInfo = function () {
-// 	console.log(
-// 		`${this.brend} tezligi ${this.fast} km/h. Rangi ${this.color} va narxi $${this.price} mln.`
-// 	);
-// };
+Car.prototype.getInfo = function () {
+	console.log(
+		`${this.brend} tezligi ${this.fast} km/h. Rangi ${this.color} va narxi $${this.price} mln.`
+	);
+};
 
-// let car1 = new Car("BMW", 900, "qora", 200000);
-// car1.getInfo();
+let car1 = new Car("BMW", 900, "qora", 200000);
+car1.getInfo();
 
-// let car2 = new Car("AUDI", 700, "qizil", 120000);
-// car2.getInfo();
+let car2 = new Car("AUDI", 700, "qizil", 120000);
+car2.getInfo();
 
 // !sdklfjlksdjfksjdfjsdfk
 
@@ -62,22 +62,17 @@
 
 // slice();
 
-// let obj = {};
-// function slice() {
-// 	let str = "hello";
-// 	let counter = 0;
+let obj = {};
+function slice() {
+	let str = "helo";
+	let counter = 0;
 
-// 	for (let i = 0; i < str.length; i++) {
-// 		counter++;
-// 		obj.counter = counter;
-// 		obj.key = str[i];
-// 		for (let i in str) {
-// 			obj.key = str[i];
-// 			// console.log(i);
-// 		}
-// 	}
-// 	// console.log(" ");
-// 	console.log(obj);
-// }
-
-// slice();
+	for (let i = 0; i <= str.length; i++) {
+		counter++;
+		for (let i in str) {
+			obj[str[i]] = counter;
+		}
+	}
+	console.log(obj);
+}
+slice();
