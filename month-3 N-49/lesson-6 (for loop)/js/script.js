@@ -19,7 +19,19 @@
 let result = 0;
 control = true;
 
-while (control) {
+// while (control) {
+// 	let num = parseInt(prompt("Enter a number."));
+// 	if (num !== 0) {
+// 		result += num;
+// 	} else {
+// 		control = false;
+// 		console.log(result);
+// 	}
+// }
+
+// *Do while bilan
+
+do {
 	let num = parseInt(prompt("Enter a number."));
 	if (num !== 0) {
 		result += num;
@@ -27,4 +39,4 @@ while (control) {
 		control = false;
 		console.log(result);
 	}
-}
+} while (control);
