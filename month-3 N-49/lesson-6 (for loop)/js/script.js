@@ -14,6 +14,17 @@
 // 	}
 // }
 
-let num = +prompt("Enter a number.");
+// ? Foydalanuvchi son kiritadi har kiritgan sonini bir biriga qo'shib ketadi va qachonki 0 kiritsa amal to'xtaydi va consoleda barcha sonlar yig'indisi chiqadi.
 
-let i = 0;
+let result = 0;
+control = true;
+
+while (control) {
+	let num = +prompt("Enter a number.");
+	if (num !== 0) {
+		result += num;
+	} else {
+		control = false;
+		console.log(result);
+	}
+}
