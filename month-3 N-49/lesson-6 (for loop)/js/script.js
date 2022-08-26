@@ -20,7 +20,7 @@ let result = 0;
 control = true;
 
 while (control) {
-	let num = +prompt("Enter a number.");
+	let num = parseInt(prompt("Enter a number."));
 	if (num !== 0) {
 		result += num;
 	} else {
