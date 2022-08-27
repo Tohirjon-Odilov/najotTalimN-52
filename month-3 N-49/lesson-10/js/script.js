@@ -43,3 +43,5 @@
 
 let str = prompt("Nimadir kiriting?");
 str ? console.log("Truthy qiymat") : console.log("Falsy qiymat");
+
+
