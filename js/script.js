@@ -18,24 +18,53 @@
   // })
   // console.log(sorted)
   
-let massive = [11,2,0,43,53,12,9,5,3]
-let str = ['car', "window", "salom"]
+/**************
+ *  ?VAZIFA *
+ **************/
+  
+// let massive = [11,2,0,43,53,12,9,5,3]
+// console.log("Sortlanmagan holati");
+// console.log(massive);
+// let str = ['car', "window", "salom", "masha"]
+// console.log(str);
 
-let arr = function(mySort){
-  if(mySort === number){
-    let sorted = mySort.sort((a,b) => {
-      return a - b
-    })
-    console.log(sorted)
+// function sorting(values){
+//   let newMassiv = []
+//   let newStr = []
+  
+//   for (let i = 0; i < values.length; i++){
+//     if (typeof values[i] === "number"){
+//       newMassiv.push(values[i])
+//       newMassiv.sort((a,b) => {
+//         return a - b;
+//       })
+//     }else{
+//       newStr.push(values[i])
+//       newStr.sort()
+//     }
+//   } 
+//   return newMassiv;
+//   return str;
+// }
+
+// console.log("sorted");
+// console.log(sorting(massive));
+// console.log(sorting(str));
+
+// ?2-usul ozoqroq kod yozilgan
+
+let array = [9,4,10,77,5,6,11,0,97,51,2003]
+let string = ['olma', 'behi', 'shaftoli', "banan", 'mayiz', 'apelsin']
+
+function newSort(sortValue){
+  if(typeof sortValue[1] === 'number'){
+    return sortValue.sort((a, b) => { 
+      return a - b; 
+    });
+  }else{
+    return sortValue.sort()
   }
-  myS+ort()
 }
 
-let mstr = 'salom'
-
-
-// let array = [34,12,43,54,23,12,90,49]
-
-// for (let i = 0; i < array.length; i++) {
-//   const element = array[i];
-// }
+console.log(newSort(array));
+console.log(newSort(string));
