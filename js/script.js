@@ -51,7 +51,7 @@
 // console.log(sorting(massive));
 // console.log(sorting(str));
 
-// ?2-usul ozoqroq kod yozilgan
+// ?2-usul ozroq kod yozilgan
 
 let array = [9,4,10,77,5,6,11,0,97,51,2003]
 let string = ['olma', 'behi', 'shaftoli', "banan", 'mayiz', 'apelsin']
