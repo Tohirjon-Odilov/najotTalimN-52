@@ -23,15 +23,25 @@
 
 // !Darsdagi kodlar Ismlar orqasidan xon'ni qo'shadi.
 
-function nameSikl (){
-	let sikl = prompt("Nechta ism kiritmoqchisiz?");
-	for(let i = 0; i < sikl; i++){
-		let name = prompt("Faqat ayollar ismini kiriting!")
-		console.log(`${name}xon`)	
-	}
-}
-nameSikl();
+// function nameSikl (){
+// 	let sikl = prompt("Nechta ism kiritmoqchisiz?");
+// 	for(let i = 0; i < sikl; i++){
+// 		let name = prompt("Faqat ayollar ismini kiriting!")
+// 		console.log(`${name}xon`)	
+// 	}
+// }
+// nameSikl();
 
+// ! Kiritilgan sonlarni bir-biriga qo'shish dasturi a+b
+
+function additionNumber(){
+	let a = Number(prompt("Son kiriting?"))
+	let b = Number(prompt("Son kiriting?"))
+	let result = a + b
+	return result;
+}
+
+console.log(additionNumber())
 
 
 
