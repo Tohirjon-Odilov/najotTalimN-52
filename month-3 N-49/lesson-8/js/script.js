@@ -21,6 +21,20 @@
 // 	i++;
 // } while (i <= 50);
 
+// !Darsdagi kodlar Ismlar orqasidan xon'ni qo'shadi.
+
+function nameSikl (){
+	let sikl = prompt("Nechta ism kiritmoqchisiz?");
+	for(let i = 0; i < sikl; i++){
+		let name = prompt("Faqat ayollar ismini kiriting!")
+		console.log(`${name}xon`)	
+	}
+}
+nameSikl();
+
+
+
+
 //! calculator
 
 // let num1 = +prompt("Enter first number");
@@ -93,122 +107,122 @@
 
 // 1. Declaration
 
-function userAbout(firstName, lastName, age, country, city) {
-	console.log(
-		"My name is " +
-			firstName +
-			" " +
-			lastName +
-			" and I am " +
-			age +
-			" years old. I am from " +
-			country +
-			" in " +
-			city +
-			"."
-	);
-}
+// function userAbout(firstName, lastName, age, country, city) {
+// 	console.log(
+// 		"My name is " +
+// 			firstName +
+// 			" " +
+// 			lastName +
+// 			" and I am " +
+// 			age +
+// 			" years old. I am from " +
+// 			country +
+// 			" in " +
+// 			city +
+// 			"."
+// 	);
+// }
 
-userAbout("John", "Doe", "30", "USA", "New York");
+// userAbout("John", "Doe", "30", "USA", "New York");
 
-// 2. Declaration
+// // 2. Declaration
 
-function isStudent(fullname, age, isMarried, studies) {
-	console.log(
-		fullname +
-			" is " +
-			age +
-			" years old. Is he married? " +
-			isMarried +
-			". He studies " +
-			studies +
-			"."
-	);
-}
+// function isStudent(fullname, age, isMarried, studies) {
+// 	console.log(
+// 		fullname +
+// 			" is " +
+// 			age +
+// 			" years old. Is he married? " +
+// 			isMarried +
+// 			". He studies " +
+// 			studies +
+// 			"."
+// 	);
+// }
 
-isStudent("John", "30", false, "Web Development");
+// isStudent("John", "30", false, "Web Development");
 
-// 3. Declaration
+// // 3. Declaration
 
-function computer(brand, model, year) {
-	console.log(
-		"This computer was made by " +
-			brand +
-			" in " +
-			year +
-			". It is a " +
-			model +
-			"."
-	);
-}
+// function computer(brand, model, year) {
+// 	console.log(
+// 		"This computer was made by " +
+// 			brand +
+// 			" in " +
+// 			year +
+// 			". It is a " +
+// 			model +
+// 			"."
+// 	);
+// }
 
-computer("Apple", "Macbook Pro", "2018");
+// computer("Apple", "Macbook Pro", "2018");
 
-// 4. Declaration
+// // 4. Declaration
 
-function calculateAge(year) {
-	// *Yoshni hisoblab beradi.
-	console.log(2022 - year);
-}
+// function calculateAge(year) {
+// 	// *Yoshni hisoblab beradi.
+// 	console.log(2022 - year);
+// }
 
-calculateAge(1990);
+// calculateAge(1990);
 
-// 5. DECLARATION
+// // 5. DECLARATION
 
-function yearsUntilRetirement(name, year) {
-	// *Pensiyaga qancha qoldi bilib beradi.
-	console.log(65 - (2022 - year));
-}
+// function yearsUntilRetirement(name, year) {
+// 	// *Pensiyaga qancha qoldi bilib beradi.
+// 	console.log(65 - (2022 - year));
+// }
 
-yearsUntilRetirement("John", 1990);
+// yearsUntilRetirement("John", 1990);
 
-/**************
- * !EXPRETION; *
- **************/
+// /**************
+//  * !EXPRETION; *
+//  **************/
 
-// 1. EXPRESSION
+// // 1. EXPRESSION
 
-let userAbout_expression = function (firstName, lastName, age, country, city) {
-	return `Your name is ${firstName} ${lastName} and you are ${age} years old. You are from ${country} in ${city}.`;
-};
+// let userAbout_expression = function (firstName, lastName, age, country, city) {
+// 	return `Your name is ${firstName} ${lastName} and you are ${age} years old. You are from ${country} in ${city}.`;
+// };
 
-console.log(userAbout_expression("John", "Doe", "30", "USA", "New York"));
+// console.log(userAbout_expression("John", "Doe", "30", "USA", "New York"));
 
-// 2. EXPRESSION
+// // 2. EXPRESSION
 
-let isStudent_expression = function (fullname, age, isMarried, studies) {
-	return `${fullname} is ${age} years old. Is he married? ${isMarried}. He studies ${studies}.`;
-};
+// let isStudent_expression = function (fullname, age, isMarried, studies) {
+// 	return `${fullname} is ${age} years old. Is he married? ${isMarried}. He studies ${studies}.`;
+// };
 
-console.log(isStudent_expression("Jon Mark", "20", false, "true"));
+// console.log(isStudent_expression("Jon Mark", "20", false, "true"));
 
-// 3. EXPRESSION
+// // 3. EXPRESSION
 
-let computer_expression = function (brand, model, year) {
-	return `This computer was made by ${brand} in ${year}. It is a ${model}.`;
-};
+// let computer_expression = function (brand, model, year) {
+// 	return `This computer was made by ${brand} in ${year}. It is a ${model}.`;
+// };
 
-console.log(computer_expression("Apple", "Macbook Pro", "2018"));
+// console.log(computer_expression("Apple", "Macbook Pro", "2018"));
 
-// 4. EXPRESSION
+// // 4. EXPRESSION
 
-let calculateAge_expression = function (year) {
-	// *Yoshni hisoblab beradi.
-	return `You will be ${2022 - year} years old.`;
-};
+// let calculateAge_expression = function (year) {
+// 	// *Yoshni hisoblab beradi.
+// 	return `You will be ${2022 - year} years old.`;
+// };
 
-console.log(calculateAge_expression(1990));
+// console.log(calculateAge_expression(1990));
 
-// 5. EXPRESSION
+// // 5. EXPRESSION
 
-let yearsUntilRetirement_expression = function (name, year) {
-	// *Pensiyaga qancha qoldi bilib beradi.
-	return `${name} will be retired in ${65 - (2022 - year)}.`;
-};
+// let yearsUntilRetirement_expression = function (name, year) {
+// 	// *Pensiyaga qancha qoldi bilib beradi.
+// 	return `${name} will be retired in ${65 - (2022 - year)}.`;
+// };
 
-console.log(yearsUntilRetirement_expression("John", 1990));
+// console.log(yearsUntilRetirement_expression("John", 1990));
 
-let nimadir = function (firstName, lastName, age, country, city) {
-	return `Your name is ${firstName} ${lastName} and you are ${age} years old. You are from ${country} in ${city}.`;
-};
-console.log(nimadir("John", "Doe", "30", "USA", "New York"));
+// let nimadir = function (firstName, lastName, age, country, city) {
+// 	return `Your name is ${firstName} ${lastName} and you are ${age} years old. You are from ${country} in ${city}.`;
+// };
+// console.log(nimadir("John", "Doe", "30", "USA", "New York"));
