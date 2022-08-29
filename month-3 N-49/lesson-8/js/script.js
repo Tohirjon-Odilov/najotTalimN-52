@@ -34,14 +34,14 @@
 
 // ! Kiritilgan sonlarni bir-biriga qo'shish dasturi a+b
 
-function additionNumber(){
-	let a = Number(prompt("Son kiriting?"))
-	let b = Number(prompt("Son kiriting?"))
-	let result = a + b
-	return result;
-}
+// function additionNumber(){
+// 	let a = Number(prompt("Son kiriting?"))
+// 	let b = Number(prompt("Son kiriting?"))
+// 	let result = a + b
+// 	return result;
+// }
 
-console.log(additionNumber())
+// console.log(additionNumber())
 
 
 
