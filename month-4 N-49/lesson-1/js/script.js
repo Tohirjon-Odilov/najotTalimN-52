@@ -1,13 +1,13 @@
 {
-  let arr = [18, 4, -5, -6, -7, -8, -95, 1, -10, 3, 9, -1]
-  let arr2 = 0;
+  // let arr = [18, 4, -5, -6, -7, -8, -95, 1, -10, 3, 9, -1]
+  // let arr2 = 0;
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 0) {
-      arr2 += arr[i]
-    }
-  }
-  console.log(arr2);
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (arr[i] > 0) {
+  //     arr2 += arr[i]
+  //   }
+  // }
+  // console.log(arr2);
 }
 
 
@@ -105,11 +105,40 @@
  * IMPORT *
  **********/
 
-import oddiyFunc from "./functions.js"
+// * defaultni export qilish
+// import oddiyFunc from "./functions.js"
 
-console.log(oddiyFunc("salom"));
+// console.log(oddiyFunc("salom"));
 
-import CarFactory, { Person, Pet } from "./obj.js"
 
-const car1 = new CarFactory()
-console.log(car1);
+// *gulli qavslar bilan export qilish. 
+// import { Person, Pet } from "./obj.js"
+
+
+// *Bu usulda esa 1 va 2 chi usuldan chachishtirgan holatda foydalanganmiz.   
+// import CarFactory, { Person, Pet } from "./obj.js"
+
+// const car1 = new CarFactory()
+// console.log(car1);
+
+// const person1 = new Person()
+// console.log(person1);
+
+// const pet1 = new Pet()
+// console.log(pet1);
+
+
+// *obyeklarni barchasini bir qutiga joylash
+// import all from './obj.js';
+
+// console.log(all);
+// *obyektning har-biriga alohida murojaat qilish
+// let person1 = new all.Person();
+// console.log(person1);
+
+
+import kattaSozlar, { main1, main2 } from './functions.js'
+
+console.log(kattaSozlar("alik"));
+main1()
+main2()
