@@ -108,3 +108,8 @@
 import oddiyFunc from "./functions.js"
 
 console.log(oddiyFunc("salom"));
+
+import CarFactory, { Person, Pet } from "./obj.js"
+
+const car1 = new CarFactory()
+console.log(car1);

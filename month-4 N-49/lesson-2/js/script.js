@@ -18,7 +18,7 @@ let arr = [
     id: 4,
     brand: "ford",
     price: 400
-  }
+  },
 ]
 
 let cars = new Cars(arr)
