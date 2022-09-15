@@ -4,10 +4,10 @@
 // newFunc2()
 
 
-import { newFunc1, newFunc2 } from './module.js';
+// import { newFunc1, newFunc2 } from './module.js';
 
-newFunc1()
-newFunc2()
+// newFunc1()
+// newFunc2()
 
 // {
 //   let arr = [
@@ -36,6 +36,90 @@ newFunc2()
 //   let cars = new Cars(arr)
 // }
 
+{
+  // let li = document.querySelectorAll("li")
+
+  // console.log(Array.from("salom"))
+  // console.log(li);
+}
+
+// !month-3 lesson-11 for homework
+// 1. **isEmpty()** nomli funksiya yozing. Unga Object berib yuborganimda ichida propertylari bo’lsa false, hech qanday propertysi bo’lmasa true qaytarsin.
+// Yordam: Object.keys
+// const isEpty = (obj) => {
+//   console.log(Object.keys(obj));
+//   return Object.keys(obj).length > 0 ? false : true;
+// }
+// console.log(isEpty({ name: '' }));
+
+// ozroq ko'd bilan
+// const isEpty = (obj) => Object.keys(obj).length > 0 ? false : true;
+// console.log(isEpty({ name: '' }));
+
+2. // Quyida berilgan Object dagi shaxslar daromadlarini jamini xisoblab chiqaruvchi funksiya yozing.  Funksiya PURE (toza) bo’lishi shart!
 
 
+// const sumAll = (obj) => {
+//   let arr = Object.values(obj);
+
+//   return arr.reduce((sum, num) => sum + num, 0);
+// }
+// console.log(
+//   sumAll({
+//     John: 130,
+//     Ann: 100,
+//     Pete: 50
+//   })
+// );
+
+3. // Obyekt propertylarini 2ga ko’paytiradigan funksiya yozing. Funksiya PURE (toza) bo’lishi shart!
+// Yordam: typeof
+// funksiyani chaqirishdan avval
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu"
+// };
+
+// multiplyNumeric(menu);
+
+// chaqirishdan keyin
+// menu = {
+//   width: 400,
+//   height: 600,
+//   title: "My menu"
+// };
+
+// ?yechim
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+// function multiplyNumeric(obj) {
+//   for (const key in obj) {
+//     if (!isNaN(obj[key])) {
+//       obj[key] = obj[key] * 2
+//     }
+//   }
+// }
+
+/**** bosha
+// function multiplyNumeric(obj) {
+  // console.log(obj);
+  // return { ...obj }
+// }
+ ****/
+
+// multiplyNumeric(menu)
+// console.log(menu);
+
+
+/////////
+let arr = ["A", "B", "C", "D", "E", "F"]
+
+let [w, , t, ...def] = arr
+
+console.log(w, t, def); // A C Array(3) [ "D", "E", "F" ]
 
