@@ -123,3 +123,21 @@ let [w, , t, ...def] = arr
 
 console.log(w, t, def); // A C Array(3) [ "D", "E", "F" ]
 
+/********
+ * SORT *
+ ********/
+{
+  let arr = [-55, 0, 2, 1, -10, 8, -100, 9, -1, 15]
+
+  1. // raqamlarni sortlash
+  // let arr2 = [...arr].sort((a, b) => a - b)
+
+  2. // raqamlarni sortlash
+  let arr2 = arr.sort((a, b) => {
+    if (a > b) return 1;
+    if (a === b) return 0;
+    if (a < b) return -1;
+  })
+
+  console.log(arr2); //[ -10, 1, 2, 5, 8 ]
+}
