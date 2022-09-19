@@ -1,0 +1,118 @@
+.todo-main {
+	margin-bottom: 10px;
+	position: relative;
+	border-radius: 5px;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	background-color: #cfe2ff;
+	/* filter: blur(0.2rem); */
+	border-color: #b6d4fe;
+	/* filter: blur(1rem); */
+}
+
+.line {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* width: 100%; */
+	height: 2px;
+	background-color: #181818;
+	/* animation: line 3s timing-function delay forwards direction fill-mode; */
+	/* animation-name: line; */
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	/* animation-direction: reverse; */
+	animation-fill-mode: forwards;
+	/* animation-direction: alternate-reverse; */
+}
+
+@keyframes line {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+.todo-check {
+	color: #084298;
+	margin-left: 30px;
+	text-transform: capitalize;
+	color: black;
+}
+
+.secondary {
+	color: #fff;
+	background-color: #6c757d;
+	border-color: #6c757d;
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	border-radius: 0.25rem;
+	z-index: -1;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.danger {
+	color: #fff;
+	background-color: #dc3545;
+	border-color: #dc3545;
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	border-radius: 0.25rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#bg {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.modal__body {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	display: none;
+	color: royalblue;
+	color: crimson;
+	line-height: 30px;
+	font-size: 20px;
+	padding: 100px 50px;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 1px 1px 100px 1000px rgba(0, 0, 0, 0.5);
+}
+
+.btn-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 20px;
+}

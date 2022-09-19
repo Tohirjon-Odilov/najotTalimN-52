@@ -117,27 +117,48 @@ let menu = {
 
 
 /////////
-let arr = ["A", "B", "C", "D", "E", "F"]
+// let arr = ["A", "B", "C", "D", "E", "F"]
 
-let [w, , t, ...def] = arr
+// let [w, , t, ...def] = arr
 
-console.log(w, t, def); // A C Array(3) [ "D", "E", "F" ]
+// console.log(w, t, def); // A C Array(3) [ "D", "E", "F" ]
 
-/********
- * SORT *
- ********/
-{
-  let arr = [-55, 0, 2, 1, -10, 8, -100, 9, -1, 15]
+// /********
+//  * SORT *
+//  ********/
+// {
+//   let arr = [-55, 0, 2, 1, -10, 8, -100, 9, -1, 15]
 
-  1. // raqamlarni sortlash
-  // let arr2 = [...arr].sort((a, b) => a - b)
+//   1. // raqamlarni sortlash
+//   // let arr2 = [...arr].sort((a, b) => a - b)
 
-  2. // raqamlarni sortlash
-  let arr2 = arr.sort((a, b) => {
-    if (a > b) return 1;
-    if (a === b) return 0;
-    if (a < b) return -1;
-  })
+//   2. // raqamlarni sortlash
+//   let arr2 = arr.sort((a, b) => {
+//     if (a > b) return 1;
+//     if (a === b) return 0;
+//     if (a < b) return -1;
+//   })
 
-  console.log(arr2); //[ -10, 1, 2, 5, 8 ]
-}
+//   console.log(arr2); //[ -10, 1, 2, 5, 8 ]
+// }
+
+
+// Number.EPSILON
+
+// console.log(
+//   Number.EPSILON
+// );
+
+// console.log(Number.isNaN("sad" - 0));
+
+// console.log((2 ** 53 - 1) + " dan " + -(2 ** 53 - 1));
+
+// console.log(Number.isSafeInteger(2 ** 53));
+// console.log(Number.parseInt('1.5asdfsdfasf'))
+
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE, "min");
+console.log(Number.EPSILON);
+console.log(Number.NEGATIVE_INFINITY);
+console.log(Number.POSITIVE_INFINITY);
+console.log(2 ** 53, "sa");
