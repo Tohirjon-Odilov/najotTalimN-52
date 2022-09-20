@@ -13,6 +13,9 @@ function $(selector) {
 }
 
 
-let div = $(div)
+// let div = $(div)
 
-console.log(div);
+// console.log(div);
+
+const x = Symbol('hey');
+console.log(x.description); // hey
