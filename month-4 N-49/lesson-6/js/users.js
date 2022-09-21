@@ -7,7 +7,7 @@ var data = [
     address: "581-4747 Porttitor Av.",
     time: "8:51 AM",
     company: "A Felis LLC",
-    text: "in molestie tortor nibh sit",
+    text: "in moles tie tortor nibh sit",
     date_of_onliine: "Mar 20, 2022",
     date_of_register: "Jun 14, 2019",
     priority: "high",
@@ -91,7 +91,7 @@ var data = [
     priority: "low",
   },
   {
-    ava: "https://images.generated.photos/2sQkoekQRzZ5ZeQSCjCYdhwIiER7DSMoLTbq98mZbWA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MTQzMzM2LmpwZw.jpg.",
+    ava: "https://images.generated.photos/PkHu9O79vjKQqIJnFlHiiga_XwvY5yA0t2RESp8JwK0/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTg1NzEwLmpwZw.jpg",
     name: "Angela Burris",
     phone: "1-813-323-6525",
     email: "nonummy@icloud.edu",
@@ -2600,3 +2600,5 @@ var data = [
     priority: "low",
   },
 ];
+
+export default data;

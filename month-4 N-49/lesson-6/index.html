@@ -14,7 +14,7 @@
 	<script src="./js/utilites.js"></script>
 	<body>
 		<section class="main-section">
-			<div class="main__wrapper">
+			<div class="main__wrapper d-flex">
 				<!-- <div class="container d-none">
 					<h2 class="aside__title">Dashboard Kit</h2>
 					<ul class="aside__list">
@@ -218,8 +218,86 @@
 						</ul>
 				</div>
 			</div>
-			<div class="main">
-				<div class="container"></div>
+
+			<!-- Main -->
+			
+			<div class="main p-4 w-100">
+				<!-- <div class="container"> -->
+					<div class="main__header pb-5 d-flex align-items-center justify-content-between">
+						<h2 class="main__title mb-0">Tickets</h2>
+						<div class="main__header-right d-flex align-items-center">
+							<img src="./images/search.svg" alt="">
+							<img src="./images/new.svg" alt="">
+							<span class="line-90"></span>
+							<div class="user__wrapper">
+								<strong>Jones Ferdinand</strong>
+								<img src="./images/_header.svg" alt="">
+							</div>
+						</div>
+					</div>
+
+					<!-- table -->
+					
+					<div class="main__table rounded w-100 bg-white">
+						<div class="table__header d-flex p-4 justify-content-between">
+							<h3 class="main__table-title m-0">
+								All tickets
+							</h3>
+							<div class="d-flex">
+								<div id="sort" class="sort__wrapper d-flex align-content-center pe-4">
+									<img src="./images/sort.svg" alt="">
+									<strong class="text-black-50">Sort</strong>
+								</div>
+								<div id="filter" class="filter__wrapper d-flex align-content-center">
+									<img src="./images/filter.svg" alt="">
+									<strong class="text-black-50">Filter</strong>
+								</div>
+							</div>
+						</div>
+						<table class="table table-hover">
+							<thead class="table-light">
+								<tr>
+									<th class="ps-4">Ticket details</th>
+									<th>Customer name</th>
+									<th>Date</th>
+									<th>Priority</th>
+									<th> </th>
+								</tr>
+							</thead>
+
+							<!-- data -->
+							
+							<tbody id="tbody">
+								<!-- <tr >
+									<td class="ps-4">
+										<div class="d-flex">
+											<img src="./images/1.svg" alt="">
+											<div class="d-flex flex-column ps-3">
+												<strong>Contact Email not Linked</strong>
+												<span>Updated 1 day ago</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<strong class="d-flex">Tom Cruise</strong>
+										<span>on 24.05.2019</span>
+									</td>
+									<td>
+										<strong class="d-flex">May 26, 2019</strong>
+										<span>6:30 PM</span>
+									</td>
+									<td>
+										<span class="line-height high">HIGH</span>
+									</td>
+									<td>
+										<img class="line-height-img" src="./images/menu-settings.svg" alt="">
+									</td>
+								</tr> -->
+							</tbody>
+						</table>
+						
+					</div>
+				<!-- </div> -->
 			</div>
 		</section>
 

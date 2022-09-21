@@ -5,7 +5,7 @@ export function create(array) {
 }
 
 function $(selector) {
-  return document.createElement(selector);
+  return document.querySelector(selector);
 }
 
 

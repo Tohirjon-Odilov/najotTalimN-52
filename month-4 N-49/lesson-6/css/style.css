@@ -34,20 +34,17 @@
 
 body {
 	font-family: "Mulish", sans-serif;
+	background: #e5e5e5;
 }
 
 .aside {
 	background: #363740;
 	width: 255px;
 	height: 100vh;
-}
-
-.main {
-	background: #e5e5e5;
+	position: fixed;
 }
 
 .aside__title {
-	font-family: "Mulish";
 	font-weight: 700;
 	font-size: 19px;
 	line-height: 24px;
@@ -75,7 +72,6 @@ body {
 } */
 
 #aside__text {
-	font-family: "Mulish";
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 20px;
@@ -101,4 +97,67 @@ body {
 .aside-line {
 	height: 1px;
 	border-bottom: 1px solid #dfe0eb6e;
+}
+
+.main {
+	margin-left: 255px;
+}
+.main__table {
+	border: 1px solid #dfe0eb;
+}
+
+.main__title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	color: #252733;
+}
+
+.line-90 {
+	display: inline-block;
+	height: 33px;
+	border-left: 2px solid #c8c8c8;
+}
+
+.main__header-right {
+	gap: 30px !important;
+}
+
+.main__table-title {
+	font-weight: 700;
+	font-size: 19px;
+	line-height: 24px;
+	color: #252733;
+}
+
+.line-height-img {
+	padding-top: 13px;
+}
+
+.high {
+	padding: 5px 14px;
+	background: #f12b2c;
+	border-radius: 100px;
+	color: white !important;
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 50px;
+}
+
+.low {
+	background: #fec400;
+}
+
+.normal {
+	background: #29cc97;
+}
+
+th {
+	color: #c5c7cd !important;
+	font-weight: 600;
+	background-color: white !important;
+}
+
+table span {
+	color: #c5c7cd !important;
 }
