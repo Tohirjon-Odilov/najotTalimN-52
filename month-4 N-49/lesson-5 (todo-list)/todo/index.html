@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./main.css" />
+		<style>
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+		</style>
+		<title>Todo list</title>
+	</head>
+	<body>
+		<div class="container">
+			<form class="form">
+				<div class="form__wrapper">
+					<input
+						type="text"
+						class="form__input"
+						placeholder="Type your task ..."
+					/>
+					<button class="form__btn">Add</button>
+				</div>
+			</form>
+			<div class="box">
+				<div class="task">
+					<input type="checkbox" class="task__input" name="" id="" />
+					<div class="task__deskription">Kitob o'qish</div>
+					<button data-type="edit" class="task__btn task__edit">Edit</button>
+					<button data-type="delete" class="task__btn task__delete">
+						Delete
+					</button>
+				</div>
+			</div>
+			<div class="modal">
+				<div class="modal__body"></div>
+			</div>
+		</div>
+
+		<script src="./todo.js"></script>
+	</body>
+</html>
