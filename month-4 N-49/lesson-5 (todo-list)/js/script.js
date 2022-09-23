@@ -45,13 +45,33 @@ data.forEach((el) => {
   img.src = el.img
   p.textContent = el.desc + ' | ' + el.price
 
+  div.dataset.id = el.id
   div.append(img, h2, p)
   box.append(div)
 })
 
+let textNode = document.createTextNode('  Here I am');
+console.log(textNode);
 
+//* practise
+// let input = document.querySelector('#input');
+// let ul = document.querySelector('#ul');
+// let btn = document.querySelector('#btn');
 
+// btn.addEventListener('click', dinamic)
 
+// function dinamic() {
+//   let li = document.createElement('li');
+//   let text = document.createTextNode(input.value)
+
+//   li.append(text)
+//   ul.append(li)
+// }
+let ol = document.createElement('ol');
+
+document.body.append(ol)
+ol.before('before'); // insert string "before" before <ol>
+ol.after('after'); // insert string "after" after <ol>
 
 
 
