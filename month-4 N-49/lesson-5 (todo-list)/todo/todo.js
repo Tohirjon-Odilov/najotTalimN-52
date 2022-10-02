@@ -4,31 +4,43 @@ let form = body.querySelector('.form')
 let formInput = body.querySelector('.form__input')
 let modal = body.querySelector('.modal')
 
+let date = new Date()
+
+//! database
+const taskArray = [
+]
+
 form.addEventListener('submit', (e) => {
   e.preventDefault() // sahifa yangilanib ketishini oldini oladi.
 
   let task = formInput.value.trim()
 
-  modal.addEventListener('click', function () {
-    modal.style.display = 'none'
+  taskArray.push({
+    id: date.getTime(),
+    task: task, worldsalomworldsalom,
+    iscomplete: false
   })
 
+  console.log(taskArray);
+
   if (task.length === 0) {
-    modal.style.display = 'flex'
     return
   }
 
-  if (task.length <= 3) {
-    modal.style.display = 'flex'
-  }
+  const taskDiv = createElementWithTaskText(task)
 
+  box.appendChild(taskDiv)
+  formInput.value = ""
+})
+
+function createElementWithTaskText(taskText) {
   const taskInput = document.createElement('input')
   taskInput.type = "checkbox"
   taskInput.className = "task__input"
 
-  const taskDeck = document.createElement('div')
-  taskDeck.textContent = task
-  taskDeck.className = "task__deskription"
+  const taskDeskription = document.createElement('div')
+  taskDeskription.textContent = taskText
+  taskDeskription.className = "task__deskription"
 
   const taskEdit = document.createElement('button')
   taskEdit.textContent = 'Edit'
@@ -37,8 +49,11 @@ form.addEventListener('submit', (e) => {
 
   const taskDiv = document.createElement('div')
   taskDiv.className = "task"
-  taskDiv.append(taskInput, taskDeck, taskEdit, taskDelete)
+  taskDiv.append(taskInput, taskDeskription, taskEdit, taskDelete)
 
-  box.appendChild(taskDiv)
-  formInput.value = ""
-})
+  return taskDiv;
+}
+
+  // modal.addEventListener('click', function () {
+  //   modal.style.display = 'none'
+  // })
