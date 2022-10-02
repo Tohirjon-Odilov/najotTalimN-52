@@ -16,12 +16,13 @@ if (!storage.getItem('token')) {
   window.location.replace('../login.html')
 } else {
   userData = JSON.parse(userToken)
-  console.log(userData);
 }
 
-
 document.querySelector('h1').append(document.createTextNode(' ' + userData.login + '. Hush kelibsiz!'))
-// storage.clear()
+form.addEventListener('submit', (e) => {
+  storage.removeItem('token')
+  // window.location.reload()
+})
 
 
 
