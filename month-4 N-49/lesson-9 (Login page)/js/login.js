@@ -24,3 +24,8 @@ form.addEventListener('submit', (e) => {
   }
 })
 
+document.querySelector('.eye').addEventListener(('click'), () => {
+  console.log(password.type);
+  password.type = password.type == 'text' ? 'password' : 'text'
+})
+

@@ -18,11 +18,38 @@ if (!storage.getItem('token')) {
   userData = JSON.parse(userToken)
 }
 
-document.querySelector('h1').append(document.createTextNode(' ' + userData.login + '. Hush kelibsiz!'))
+document.querySelector('h1').append(document.createTextNode(userData ? " " + userData.login + '. Hush kelibsiz!' : ' '))
+
+
+/*******************************
+ * !LOG OUT TUGMASINI mexanizmi *
+ *******************************/
 form.addEventListener('submit', (e) => {
   storage.removeItem('token')
-  // window.location.reload()
 })
+
+/**************************************
+ * !30 SONIYADAN SO'NG LOG OUT QILISH *
+ **************************************/
+function makeLogOut() {
+  storage.removeItem('token')
+  window.location.reload()
+}
+
+let time = 10000
+
+let timeId = setTimeout(makeLogOut, time);
+
+window.addEventListener('mousemove', (e) => {
+  clearTimeout(timeId)
+  timeId = setInterval(makeLogOut, time)
+})
+
+let tenTime = time / 1000
+document.body.append(document.createElement('section'))
+setInterval(() => {
+  document.querySelector('section').textContent = tenTime--
+}, 1000)
 
 
 
