@@ -1,3 +1,108 @@
+{
+  const calc = function (func, s1, s2) {
+    return func(s1, s2)
+  }
+
+  const addition = function (s1, s2) {
+    return s1 + s2
+  }
+
+  const subtraction = function (s1 = 2, s2 = 3) {
+    if (s1 < s2) throw new Error("Birinchi son kichik ikkinchi sondan!")
+
+    return s1 - s2
+  }
+
+  const multiplication = function (s1, s2) {
+    return s1 * s2
+  }
+
+  const division = function (s1, s2) {
+    if (s1 === 0) throw new Error("No'lga bo'lish mumkin!")
+
+    return s1 / s2
+  }
+
+  // bu yerga 6 10 16 20 qatordagi o'zgaruvchilar calcga beriladi.
+  // const result = calc(subtraction)
+  // console.log(result);
+}
+
+// let calc = (s1, s2) => {
+//   console.log(arguments);
+// }
+
+// calc(2, 4)
+
+
+// function cal(s1, s2) {
+//   console.log(arguments);
+// }
+// cal(2, 4)
+
+{
+  /*************************
+   * !JAVASCRIPT RECURSION *
+   *************************/
+
+  // function countDown(number) {
+  //   console.log(number);
+  //   const newNumber = number - 1
+  //   if (newNumber > 0) {
+  //     countDown(newNumber)
+  //   }
+  // }
+  // countDown(4)
+
+}
+
+{
+  //! Factorial son
+  function factorialSon(num) {
+    if (num < 0) throw new Error("Musbat son kiritdiniz?")
+    if (num === 0) return 1
+    return num * factorialSon(num - 1)
+  }
+  console.log(factorialSon(7))
+}
+
+let obj = {
+  name: 'Tohirjon',
+  age: 25,
+  surname: "Odilov"
+}
+
+console.log(obj);
+obj['Location'] = 'Andijon'
+console.log(obj);
+
+{
+  let obj = {
+    name: 'Tohirjon',
+    surname: "Odilov",
+    age: 19,
+  }
+  let pupil = Object.create(
+    obj,
+    {
+      name: {
+        writable: true,
+        configurable: true,
+        value: 'Tohirjon'
+      },
+      surname: {
+        writable: true,
+        configurable: true,
+        value: 'Odilov'
+      }
+    }
+  )
+  pupil.name = 'YOsh ozgardi'
+  delete pupil.name
+  console.log(pupil);
+}
+
+
 // let num1 = prompt("Enter first number");
 // let num2 = prompt("Enter second number");
 
