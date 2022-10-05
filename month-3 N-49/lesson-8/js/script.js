@@ -88,11 +88,13 @@ console.log(obj);
       name: {
         writable: true,
         configurable: true,
+        enumerable: true,
         value: 'Tohirjon'
       },
       surname: {
-        writable: true,
-        configurable: true,
+        writable: true,// o'zgartirib bo'lamydigan qilish
+        configurable: true, // o'chirib bo'lmaydigan qilish
+        enumerable: true, // buni bilmadim
         value: 'Odilov'
       }
     }
@@ -101,6 +103,19 @@ console.log(obj);
   delete pupil.name
   console.log(pupil);
 }
+
+let arr = [
+  {
+    name: 'salom',
+    age: 24
+  },
+  ['men', false, 45],
+  'salom'
+]
+console.log(arr);
+arr[5] = 'ozgardi'
+console.log(arr);
+
 
 
 // let num1 = prompt("Enter first number");
