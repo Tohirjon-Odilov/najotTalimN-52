@@ -105,16 +105,24 @@ console.log(obj);
 }
 
 let arr = [
-  {
-    name: 'salom',
-    age: 24
-  },
-  ['men', false, 45],
-  'salom'
+
 ]
-console.log(arr);
-arr[5] = 'ozgardi'
-console.log(arr);
+// console.log(arr);
+// arr[5] = 'ozgardi'
+
+console.log(arr)
+// arr.splice(1)
+arr.push('salom')
+arr.push('salom2')
+arr.push('salom3')
+// delete arr[0]
+// arr.splice(0, 1)
+arr.forEach((i) => {
+  console.log(i);
+})
+console.log(arr)
+
+
 
 
 
