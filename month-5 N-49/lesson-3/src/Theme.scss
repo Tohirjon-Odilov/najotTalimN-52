@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.light {
+  background: #ddd;
+  color: #111;
+}
+
+.dark {
+  background: #333;
+  color: #fff;
+}
