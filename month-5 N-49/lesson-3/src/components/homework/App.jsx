@@ -1,10 +1,12 @@
 import React from "react";
-import Theme from "./Theme";
+// import Theme from "../theme/Theme";
+import Code from "../code/Code"
 
 class App extends React.Component {
   render() {
     return (
-      <Theme/>
+      <Code/>
+      // <Theme/>
     )
   }
 }

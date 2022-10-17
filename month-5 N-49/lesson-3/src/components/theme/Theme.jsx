@@ -17,9 +17,11 @@ class Theme extends React.Component {
   render() {
     return (
       <div className={`container ${this.state.theme === 'dark' ? "light" : 'dark'}`}>
+        <div>
         <button onClick={() => this.handClick()}>Theme</button>
         <h1>Hello world</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, quaerat.</p>
+        </div>
       </div>
     )
   }

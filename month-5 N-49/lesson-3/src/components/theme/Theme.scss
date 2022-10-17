@@ -1,9 +1,11 @@
 .container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  margin: 0 auto;
-  padding: 20px;
+  // padding: 20px;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
