@@ -2,12 +2,14 @@ import React from "react";
 
 class Theme extends React.Component{
   state = {
-    theme: "dark"
+    theme: "dark",
+    count: 0
   }
 
   handleClick(){
     this.setState({
-      theme: this.state.theme === "dark" ? "light" : "dark"
+      theme: this.state.theme === "dark" ? "light" : "dark",
+      count: this.state.count +1
     });
   }
 
@@ -24,6 +26,7 @@ class Theme extends React.Component{
           Odit inventore quod ullam sit aliquam similique in, eveniet dolorum.
           Natus non est veritatis! Laudantium eligendi libero quam porro non?
         </p>
+        <div>Sanoq{this.state.count}</div>
       </div>
     )
   }
