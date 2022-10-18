@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import styles from "./components/apps/App.module.scss"
+// import { Mytext, MyApp } from './components/Export'
+import App from "./components/apps/App"
+import UseRef from "./UseRef"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <Mytext /> */}
+    <App fontName={'monospace'} />
+    <App fontName={"serif"} />
+    <App fontName={'cursive'} />
+    <App fontName={"sanSerif"} />
+    <UseRef />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

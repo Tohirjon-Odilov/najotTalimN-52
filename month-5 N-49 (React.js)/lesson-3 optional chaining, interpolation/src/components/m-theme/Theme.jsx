@@ -6,15 +6,15 @@ class Theme extends React.Component {
   state = {
     theme: "dark"
   }
-
   handClick(){
     console.log(this.state.theme);
     this.setState({
       theme: this.state.theme === "dark"? "light" : "dark"
     })
   }
-
+  
   render() {
+    console.log(state);
     return (
       <div className={`container ${this.state.theme === 'dark' ? "light" : 'dark'}`}>
         <div>
