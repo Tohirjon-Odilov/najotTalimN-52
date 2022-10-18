@@ -1,7 +1,6 @@
 import styles from './App.module.scss';
 
 function App({fontName}) {
-  console.log(styles[fontName]);
   return (
     <>
       <div className="box">

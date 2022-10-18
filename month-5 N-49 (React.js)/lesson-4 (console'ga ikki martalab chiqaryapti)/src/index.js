@@ -4,7 +4,7 @@ import './index.css';
 // import styles from "./components/apps/App.module.scss"
 // import { Mytext, MyApp } from './components/Export'
 import App from "./components/apps/App"
-import UseRef from "./UseRef"
+import Ref from "./components/useRef/Ref"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +15,6 @@ root.render(
     <App fontName={"serif"} />
     <App fontName={'cursive'} />
     <App fontName={"sanSerif"} />
-    <UseRef />
+    <Ref />
   </React.StrictMode>
 );
