@@ -40,9 +40,6 @@ const Content = ({ id = 0 }) => {
           ))
         }
       </div>
-      {/* <section> */}
-      {/* <Outlet /> */}
-      {/* </section> */}
     </>
   )
 }

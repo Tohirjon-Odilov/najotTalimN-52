@@ -9,12 +9,34 @@ main {
 	padding: 0 2rem;
 }
 
+header {
+	border: 1px solid transparent;
+}
+nav {
+	a {
+		color: white;
+		&:hover {
+			color: white;
+		}
+	}
+}
 #dark {
+	header {
+		background: #000;
+		border: 1px solid yellow;
+	}
+	a {
+		color: white;
+	}
 	background-color: #000;
 	div a {
 		background: #000;
 	}
 	a div {
-		background: white;
+		border: 1px solid yellow;
+	}
+	a h3,
+	a p {
+		color: white;
 	}
 }

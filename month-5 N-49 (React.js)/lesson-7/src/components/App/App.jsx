@@ -13,7 +13,7 @@ function App() {
   const toggle = () => {
     setTheme((ev) => ev === 'dark' ? 'light' : 'dark')
   }
-  const [theme, setTheme] = useState("dark")
+  const [theme, setTheme] = useState("light")
   return (
     <DarkMode.Provider value={{ theme, toggle, setTheme }}>
       <div id={st[theme]} className={st.app}>
