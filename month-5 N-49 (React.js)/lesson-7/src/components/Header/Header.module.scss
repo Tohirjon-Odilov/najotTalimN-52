@@ -1,0 +1,17 @@
+.header {
+	padding: 20px 10px;
+	background: #888;
+}
+nav {
+  display: flex;
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		margin: 5px;
+    font-weight: 700;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

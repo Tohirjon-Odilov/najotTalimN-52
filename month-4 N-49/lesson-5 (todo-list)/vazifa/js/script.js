@@ -28,16 +28,13 @@ form.addEventListener('submit', (e) => {
   e.preventDefault()
   let str = input.value.trim().split("").join("")
   //check
-  console.log(str);
   if (str.length !== 0) {
     //check
-    console.log('bosh');
-
     // inputni bo'shatish
     if (input.value) {
       input.value = ""
     } else {
-      console.log("Iltimos nimadir yozing");
+      alert("Iltimos nimadir yozing");
     }
 
     /*****************
@@ -54,7 +51,7 @@ form.addEventListener('submit', (e) => {
     todoText.className = 'todo-check'
     todoText.textContent = str
     //check
-    console.log(typeof input.value);
+    // console.log(typeof input.value);
 
     let line = document.createElement("div");
     line.className = 'line'
@@ -86,7 +83,7 @@ form.addEventListener('submit', (e) => {
     /****************
      * TODO LINE *
      ****************/
-    todoCheck.addEventListener('change', function (e) {
+    todoCheck.addEventListener('change', function () {
       if (todoCheck.checked) {
         line.style.animationName = 'line'
         line.style.animationDirection = 'alternate'
@@ -103,21 +100,26 @@ form.addEventListener('submit', (e) => {
         }, 500);
       }
     })
+    /**********
+     * TODO DELETE *
+     **********/
     danger.addEventListener('click', function () {
       todoBody.remove();
     })
+
+
   } else {
     form.style.filter = "blur(0.5rem)";
     background.style.display = "block";
     modalBody.style.display = "block";
 
-    background.addEventListener("click", function (e) {
+    background.addEventListener("click", function () {
       form.style.filter = "blur(0rem)";
       background.style.display = "none";
       modalBody.style.display = "none";
     })
 
-    btnClose.addEventListener('click', function (e) {
+    btnClose.addEventListener('click', function () {
       form.style.filter = "blur(0rem)";
       background.style.display = "none";
       modalBody.style.display = "none";
@@ -125,12 +127,22 @@ form.addEventListener('submit', (e) => {
   }
 })
 
-
-
 // todo edit,remove
-let btn = $("#delete").addEventListener('click', function () {
-  todoBody.remove();
+// let btn = $("#delete").addEventListener('click', () => {
+// todoBody.remove();
+// })
+
+/*************
+ * TODO EDIT *
+ *************/
+body.addEventListener("click", (e) => {
+  let value = e.target
+  if (value.className.includes("btn-secondary")) {
+    value.textContent == "edit" ? value.textContent = "save" : value.textContent = "edit"
+  }
 })
+
+
 
 
 
