@@ -1,0 +1,5 @@
+.users {
+	display: grid;
+	gap: 25px;
+	grid-template-columns: repeat(4, 1fr);
+}
