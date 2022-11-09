@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, Outlet, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { GetNews } from "../../lib/GetNews";
 import SpecialCharacter from "../../lib/SpecialCharacter";
 import SinglePage from "../SinglePage/SinglePage";
