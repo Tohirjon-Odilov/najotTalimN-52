@@ -4,16 +4,15 @@ import Content from "../Content/Content";
 import Error from "../Error/Error";
 import Header from "../Header/Header";
 import SinglePage from "../SinglePage/SinglePage";
-import st from "./App.module.scss"
+import st from "./App.module.scss";
 
-export const DarkMode = createContext(null)
-
+export const DarkMode = createContext(null);
 
 function App() {
   const toggle = () => {
-    setTheme((ev) => ev === 'dark' ? 'light' : 'dark')
-  }
-  const [theme, setTheme] = useState("light")
+    setTheme((ev) => (ev === "dark" ? "light" : "dark"));
+  };
+  const [theme, setTheme] = useState("light");
   return (
     <DarkMode.Provider value={{ theme, toggle, setTheme }}>
       <div id={st[theme]} className={st.app}>
@@ -21,9 +20,8 @@ function App() {
         {/* <button onChange={() => setTheme("light")}>btn</button> */}
         <main className={st.main}>
           <Routes>
-            <Route path=":url" element={<Content />} >
-              <Route path=":slug" element={<SinglePage />}></Route>
-            </Route>
+            <Route path="/:url" element={<Content />}></Route>
+            <Route path="/:url/:slug" element={<SinglePage />}></Route>
             <Route path="*" element={<Error />} />
           </Routes>
         </main>
