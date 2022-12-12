@@ -1,0 +1,55 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+// @layer base {
+//   .btn {
+//     @apply font-mono text-xl bg-slate-600 text-blue-500;
+//   }
+
+//   button {
+//     @apply bg-black marker text-blue-500;
+//   }
+// }'
+body {
+  background: royalblue;
+}
+h1 {
+  font-size: 7rem;
+}
+.body {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+.wrapper {
+  display: flex;
+  gap: 10px;
+}
+h1 {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border: solid green 1px;
+  color: green;
+  font-weight: bold;
+  filter: blur(0.7px);
+  &:nth-child(2) {
+    border-color: crimson;
+    color: crimson;
+  }
+  &:nth-child(3) {
+    border-color: darkorange;
+    color: darkorange;
+  }
+  &:hover {
+    filter: blur(0px);
+    border-radius: 5px;
+  }
+}
