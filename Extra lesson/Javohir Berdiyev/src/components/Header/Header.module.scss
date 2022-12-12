@@ -1,0 +1,13 @@
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  a {
+  }
+}
+
+.active {
+  border-bottom: solid black 1px;
+  color: #e4e4e4;
+}
