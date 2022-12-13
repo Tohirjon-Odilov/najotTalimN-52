@@ -11,7 +11,7 @@ const Header = () => {
             <NavLink to={"/"}>Counter</NavLink>
           </li>
           <li>
-            <NavLink to={"nimadir"}>Counter</NavLink>
+            <NavLink to={"/useState"}>Counter</NavLink>
           </li>
           <li>
             <NavLink to={"nimadir2"}>Counter</NavLink>

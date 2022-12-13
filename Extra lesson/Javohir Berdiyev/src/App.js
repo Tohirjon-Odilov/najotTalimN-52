@@ -4,7 +4,7 @@ import "./App.scss";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Increase from "./components/increase/Increase";
-import Protected from "./components/Protected/Protected";
+import UseState from "./components/useState/UseState";
 
 export const App = () => {
   return (
@@ -13,6 +13,7 @@ export const App = () => {
       <div className="container">
         <Routes>
           <Route path="/" element={<Increase />} />
+          <Route path="/useState" element={<UseState />} />
         </Routes>
       </div>
       <Footer />
