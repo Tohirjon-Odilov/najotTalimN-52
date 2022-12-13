@@ -1,13 +1,18 @@
+.header {
+  padding: 20px 0;
+  position: sticky;
+  top: -100px;
+  background-color: #fff;
+
+  // filter: ;
+}
+
 ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   a {
+    color: rgb(36, 35, 35);
   }
-}
-
-.active {
-  border-bottom: solid black 1px;
-  color: #e4e4e4;
 }

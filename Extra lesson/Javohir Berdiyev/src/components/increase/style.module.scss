@@ -38,6 +38,7 @@ button {
   outline: none;
   border: solid green 1px;
   color: green;
+  cursor: pointer;
   font-weight: bold;
   filter: blur(0.7px);
   &:nth-child(2) {

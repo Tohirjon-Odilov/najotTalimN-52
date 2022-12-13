@@ -11,13 +11,13 @@ const Header = () => {
             <NavLink to={"counter"}>Counter</NavLink>
           </li>
           <li>
-            <NavLink>Counter</NavLink>
+            <NavLink to={"nimadir"}>Counter</NavLink>
           </li>
           <li>
-            <NavLink>Counter</NavLink>
+            <NavLink to={"nimadir"}>Counter</NavLink>
           </li>
           <li>
-            <NavLink>Counter</NavLink>
+            <NavLink to={"nimadir"}>Counter</NavLink>
           </li>
         </ul>
       </div>

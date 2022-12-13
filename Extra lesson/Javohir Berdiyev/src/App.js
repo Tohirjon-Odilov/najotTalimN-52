@@ -8,13 +8,13 @@ import Increase from "./components/increase/Increase";
 export const App = () => {
   return (
     <BrowserRouter>
+      <Header />
       <div className="container">
-        <Header />
         <Routes>
           <Route path="/counter" element={<Increase />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </BrowserRouter>
   );
 };
