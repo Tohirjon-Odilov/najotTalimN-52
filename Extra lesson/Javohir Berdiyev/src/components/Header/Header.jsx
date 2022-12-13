@@ -11,10 +11,10 @@ const Header = () => {
             <NavLink to={"/"}>Counter</NavLink>
           </li>
           <li>
-            <NavLink to={"/useState"}>Counter</NavLink>
+            <NavLink to={"/useState"}>useState</NavLink>
           </li>
           <li>
-            <NavLink to={"nimadir2"}>Counter</NavLink>
+            <NavLink to={"/lifeSycle"}>LifeSycle</NavLink>
           </li>
           <li>
             <NavLink to={"nimadir3"}>Counter</NavLink>

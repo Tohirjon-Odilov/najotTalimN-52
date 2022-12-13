@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Increase from "./components/increase/Increase";
 import UseState from "./components/useState/UseState";
+import LifeSycle from "./components/LifeSycle/LifeSycle";
 
 export const App = () => {
   return (
@@ -14,6 +15,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Increase />} />
           <Route path="/useState" element={<UseState />} />
+          <Route path="/lifeSycle" element={<LifeSycle />} />
         </Routes>
       </div>
       <Footer />
