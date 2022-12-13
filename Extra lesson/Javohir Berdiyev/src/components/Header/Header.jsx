@@ -8,16 +8,16 @@ const Header = () => {
       <div className={style.header}>
         <ul>
           <li>
-            <NavLink to={"counter"}>Counter</NavLink>
+            <NavLink to={"/"}>Counter</NavLink>
           </li>
           <li>
             <NavLink to={"nimadir"}>Counter</NavLink>
           </li>
           <li>
-            <NavLink to={"nimadir"}>Counter</NavLink>
+            <NavLink to={"nimadir2"}>Counter</NavLink>
           </li>
           <li>
-            <NavLink to={"nimadir"}>Counter</NavLink>
+            <NavLink to={"nimadir3"}>Counter</NavLink>
           </li>
         </ul>
       </div>

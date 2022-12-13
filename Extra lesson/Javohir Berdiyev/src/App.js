@@ -4,6 +4,7 @@ import "./App.scss";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Increase from "./components/increase/Increase";
+import Protected from "./components/Protected/Protected";
 
 export const App = () => {
   return (
@@ -11,7 +12,7 @@ export const App = () => {
       <Header />
       <div className="container">
         <Routes>
-          <Route path="/counter" element={<Increase />} />
+          <Route path="/" element={<Increase />} />
         </Routes>
       </div>
       <Footer />
