@@ -6,16 +6,18 @@ import Header from "./components/Header/Header";
 import Increase from "./components/increase/Increase";
 import UseState from "./components/useState/UseState";
 import LifeSycle from "./components/LifeSycle/LifeSycle";
+import FormValidation from "./components/FormValidation/FormValidation";
 
 export const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      <div className="container">
+      <div className="container box">
         <Routes>
           <Route path="/" element={<Increase />} />
           <Route path="/useState" element={<UseState />} />
           <Route path="/lifeSycle" element={<LifeSycle />} />
+          <Route path="/form" element={<FormValidation />} />
         </Routes>
       </div>
       <Footer />

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={style.site__header}>
       <div className={style.header}>
-        <ul>
+        <ul style={{ padding: 0, margin: 0 }}>
           <li>
             <NavLink to={"/"}>Counter</NavLink>
           </li>
@@ -17,7 +17,7 @@ const Header = () => {
             <NavLink to={"/lifeSycle"}>LifeSycle</NavLink>
           </li>
           <li>
-            <NavLink to={"nimadir3"}>Counter</NavLink>
+            <NavLink to={"/form"}>Form Validation</NavLink>
           </li>
         </ul>
       </div>

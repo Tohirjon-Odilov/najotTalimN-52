@@ -11,9 +11,6 @@
 //     @apply bg-black marker text-blue-500;
 //   }
 // }'
-body {
-  background: royalblue;
-}
 h1 {
   font-size: 7rem;
 }
@@ -40,7 +37,7 @@ button {
   color: green;
   cursor: pointer;
   font-weight: bold;
-  filter: blur(0.7px);
+  // filter: blur(0.7px);
   &:nth-child(2) {
     border-color: crimson;
     color: crimson;

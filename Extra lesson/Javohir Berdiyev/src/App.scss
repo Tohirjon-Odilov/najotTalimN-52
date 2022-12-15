@@ -6,6 +6,9 @@
 }
 a {
   text-decoration: none;
+  &:hover {
+    color: black;
+  }
 }
 ul {
   list-style: none;
@@ -16,11 +19,14 @@ ul {
   margin: 0 auto;
 }
 
+.box {
+  padding: 100px 20px 0;
+}
+
 .center {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
 }
 
 .active {
