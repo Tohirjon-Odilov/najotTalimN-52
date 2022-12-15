@@ -8,15 +8,18 @@ function FormValidation() {
   let style = {};
   const queryHandler = (e) => {
     e.preventDefault();
+    style = {
+      border: "2px solid red",
+      login: "kiritilmagan!",
+      password: "kiritilmagan!",
+    };
     if (value === "") {
-      style = {
-        border: "2px solid red",
-        login: "kiritilmagan!",
-        password: "kiritilmagan!",
-      };
       setStyled(style);
       setPassStyled(style);
     }
+    value.text
+      ? setPassStyled({ border: "2px solid red", password: "kiritilmagan!" })
+      : setStyled({ border: "2px solid red", login: "kiritilmagan!" });
   };
 
   const getValueHandler = (e) => {
@@ -25,23 +28,20 @@ function FormValidation() {
 
     setValue({ [inputName]: inputValue });
     let a = { [inputName]: inputValue };
-    let valueType = Object.keys(a)[0];
+    let loginValueType = Object.keys(a)[0] === "text";
     if (a[inputName] === "") {
-      if (valueType === "text") {
-        style = {
-          border: "2px solid red",
-          login: "kiritilmagan!",
-        };
+      style = {
+        border: "2px solid red",
+      };
+      if (loginValueType) {
+        style = { ...style, login: "kiritilmagan!" };
         setStyled(style);
       } else {
-        style = {
-          border: "2px solid red",
-          password: "kiritilmagan!",
-        };
+        style = { ...style, password: "kiritilmagan!" };
         setPassStyled(style);
       }
     } else {
-      if (valueType === "text") {
+      if (loginValueType) {
         style = {
           border: "2px solid green",
         };
