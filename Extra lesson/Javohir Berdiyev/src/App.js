@@ -7,7 +7,7 @@ import Increase from "./components/increase/Increase";
 import UseState from "./components/useState/UseState";
 import LifeSycle from "./components/LifeSycle/LifeSycle";
 import FormValidation from "./components/FormValidation/FormValidation";
-import KichikAmaliyot from "./components/KichikAmaliyot/KichikAmaliyot";
+import Main from "./components/KichikAmaliyot/Main";
 
 export const App = () => {
   return (
@@ -19,7 +19,7 @@ export const App = () => {
           <Route path="/useState" element={<UseState />} />
           <Route path="/lifeSycle" element={<LifeSycle />} />
           <Route path="/form" element={<FormValidation />} />
-          <Route path="/amaliyot" element={<KichikAmaliyot />} />
+          <Route path="/amaliyot" element={<Main />} />
         </Routes>
       </div>
       <Footer />
