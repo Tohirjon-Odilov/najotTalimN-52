@@ -11,6 +11,9 @@ ul {
   justify-content: center;
   gap: 20px;
   a {
-    color: rgb(36, 35, 35);
+    color: black;
+    &:hover {
+      color: white;
+    }
   }
 }

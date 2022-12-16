@@ -19,6 +19,9 @@ const Header = () => {
           <li>
             <NavLink to={"/form"}>Form Validation</NavLink>
           </li>
+          <li>
+            <NavLink to={"/amaliyot"}>Kichik amaliyot</NavLink>
+          </li>
         </ul>
       </div>
     </header>
