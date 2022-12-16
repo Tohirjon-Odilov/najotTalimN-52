@@ -17,9 +17,9 @@ function FormValidation() {
       setStyled(style);
       setPassStyled(style);
     }
-    value.text
-      ? setPassStyled({ border: "2px solid red", password: "kiritilmagan!" })
-      : setStyled({ border: "2px solid red", login: "kiritilmagan!" });
+    // value.text.length > 0
+    // ? setPassStyled({ border: "2px solid red", password: "kiritilmagan!" })
+    // : setStyled({ border: "2px solid red", login: "kiritilmagan!" });
   };
 
   const getValueHandler = (e) => {
