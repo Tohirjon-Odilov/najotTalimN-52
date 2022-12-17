@@ -22,6 +22,9 @@ const Header = () => {
           <li>
             <NavLink to={"/amaliyot"}>Kichik amaliyot</NavLink>
           </li>
+          <li>
+            <NavLink to={"/useEffect"}>UseEffect</NavLink>
+          </li>
         </ul>
       </div>
     </header>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useParams } from "react-router-dom";
 import Char from "./Char";
 import Validation from "./Validation";
 

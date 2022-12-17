@@ -8,6 +8,7 @@ import UseState from "./components/useState/UseState";
 import LifeSycle from "./components/LifeSycle/LifeSycle";
 import FormValidation from "./components/FormValidation/FormValidation";
 import Main from "./components/KichikAmaliyot/Main";
+import UseEffect from "./components/UseEffect/UseEffect";
 
 export const App = () => {
   return (
@@ -20,6 +21,7 @@ export const App = () => {
           <Route path="/lifeSycle" element={<LifeSycle />} />
           <Route path="/form" element={<FormValidation />} />
           <Route path="/amaliyot" element={<Main />} />
+          <Route path="/useEffect" element={<UseEffect />} />
         </Routes>
       </div>
       <Footer />
