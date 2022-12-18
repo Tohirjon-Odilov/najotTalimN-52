@@ -12,6 +12,7 @@ function UseEffectUser({ data }) {
                 <h5 className="card-title">
                   {i.first_name} {i.last_name}
                 </h5>
+                <strong>Gmail: {i.email}</strong>
               </div>
             </div>
           </li>

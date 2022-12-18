@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { test } from "../../App";
 
 function Paging({ curr, total, setCurr }) {
-  let btnText = curr === total ? "Prev" : "Next";
+  const str = useContext(test);
 
+  let btnText = curr === total ? "Prev" : "Next";
   const handleClick = () => {
     let newspages;
     if (curr === total) {
@@ -11,6 +13,7 @@ function Paging({ curr, total, setCurr }) {
       newspages = curr + 1;
     }
     setCurr(newspages);
+    console.log(str);
   };
   return (
     <div>

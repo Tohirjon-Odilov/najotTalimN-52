@@ -25,6 +25,9 @@ const Header = () => {
           <li>
             <NavLink to={"/useEffect"}>UseEffect</NavLink>
           </li>
+          <li>
+            <NavLink to={"/useReduser"}>UseReduser</NavLink>
+          </li>
         </ul>
       </div>
     </header>
