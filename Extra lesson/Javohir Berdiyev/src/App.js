@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import React, { createContext, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import Footer from "./components/Footer/Footer";
@@ -11,26 +11,32 @@ import Main from "./components/KichikAmaliyot/Main";
 import UseEffect from "./components/UseEffect/UseEffect";
 import UseReduser from "./components/UseReduser";
 
-export const test = createContext();
+export const darkMode = createContext(null);
 
 export const App = () => {
+  const [theme, setTheme] = useState("dark");
+  const changeTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
   return (
-    <test.Provider value="salom">
+    <darkMode.Provider value={{ theme, changeTheme }}>
       <BrowserRouter>
-        <Header />
-        <div className="container box">
-          <Routes>
-            <Route path="/" element={<Increase />} />
-            <Route path="/useState" element={<UseState />} />
-            <Route path="/lifeSycle" element={<LifeSycle />} />
-            <Route path="/form" element={<FormValidation />} />
-            <Route path="/amaliyot" element={<Main />} />
-            <Route path="/useEffect" element={<UseEffect />} />
-            <Route path="/useReduser" element={<UseReduser />} />
-          </Routes>
+        <div className={theme}>
+          <Header />
+          <div className="container box">
+            <Routes>
+              <Route path="/" element={<Increase />} />
+              <Route path="/useState" element={<UseState />} />
+              <Route path="/lifeSycle" element={<LifeSycle />} />
+              <Route path="/form" element={<FormValidation />} />
+              <Route path="/amaliyot" element={<Main />} />
+              <Route path="/useEffect" element={<UseEffect />} />
+              <Route path="/useReduser" element={<UseReduser />} />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </BrowserRouter>
-    </test.Provider>
+    </darkMode.Provider>
   );
 };

@@ -1,17 +1,24 @@
 import React, { useReducer } from "react";
 
 function UseReduser() {
+  const initialState = {
+    num: 0,
+    str: "salom",
+  };
+
   const reducer = (state, action) => {
     switch (action.type) {
       case "decrement":
-        return state - 1;
+        return { ...state, num: state.num + 1 };
       case "increment":
-        return state + 1;
+        return { ...state, str: (state.str = "SALOM") };
       default:
         return state;
     }
   };
-  const [count, dispatch] = useReducer(reducer, 0);
+
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
     <div className="d-flex align-items-center justify-content-center">
       <button
@@ -20,7 +27,10 @@ function UseReduser() {
       >
         Dec -
       </button>
-      <div className="btn mx-3">{count}</div>
+      <div className="btn mx-3">
+        {state.num}
+        {state.str}
+      </div>
       <button
         onClick={() => dispatch({ type: "increment" })}
         className="btn btn-danger mx-3"

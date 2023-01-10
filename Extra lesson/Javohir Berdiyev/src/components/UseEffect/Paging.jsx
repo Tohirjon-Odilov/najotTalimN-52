@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { test } from "../../App";
+import { darkMode } from "../../App";
 
 function Paging({ curr, total, setCurr }) {
-  const str = useContext(test);
+  const str = useContext(darkMode);
 
   let btnText = curr === total ? "Prev" : "Next";
   const handleClick = () => {

@@ -1,11 +1,15 @@
-import React from "react";
-import style from "./Header.module.scss";
+import React, { useContext } from "react";
+import "./Header.scss";
 import { NavLink } from "react-router-dom";
+import ReactSwitch from "react-switch";
+import { darkMode } from "../../App";
 
 const Header = () => {
+  const { theme, changeTheme } = useContext(darkMode);
+  console.log(theme, changeTheme);
   return (
-    <header className={style.site__header}>
-      <div className={style.header}>
+    <header className={"site__header"}>
+      <div className={"header"}>
         <ul style={{ padding: 0, margin: 0 }}>
           <li>
             <NavLink to={"/"}>Counter</NavLink>
@@ -27,6 +31,9 @@ const Header = () => {
           </li>
           <li>
             <NavLink to={"/useReduser"}>UseReduser</NavLink>
+          </li>
+          <li>
+            <ReactSwitch onChange={changeTheme} checked={theme === "dark"} />
           </li>
         </ul>
       </div>

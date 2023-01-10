@@ -14,11 +14,7 @@
 h1 {
   font-size: 7rem;
 }
-.body {
-  background: white;
-  padding: 20px;
-  border-radius: 5px;
-}
+
 .wrapper {
   display: flex;
   gap: 10px;
@@ -29,7 +25,7 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-button {
+.wrapper button {
   padding: 15px 20px;
   border: none;
   outline: none;

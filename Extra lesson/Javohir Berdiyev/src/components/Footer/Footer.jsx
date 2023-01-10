@@ -1,13 +1,17 @@
 import React from "react";
-import style from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <div className={style.site__footer}>
+    <footer
+      style={{ backgroundColor: "#a555ec" }}
+      className="footer mt-auto py-3"
+    >
       <div className="container">
-        <div className={style.footer_section}>Footer</div>
+        <span style={{ color: "#FFFFD0" }}>
+          Place sticky footer content here.
+        </span>
       </div>
-    </div>
+    </footer>
   );
 };
 
